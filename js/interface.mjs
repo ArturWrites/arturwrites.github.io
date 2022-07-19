@@ -68,9 +68,9 @@ export function generateBlogsNavbar(linksNumber){
   liElement2.innerHTML = `<h2>Mas Recomendaciones </h2>`;
   navIndex.appendChild(liElement2);
 
-  const liElement = document.createElement("li");
-  liElement.innerHTML = `<a href="../404.html" class="lnks">Pagina de Error</a>`;
-  navIndex.appendChild(liElement);
+  // const liElement = document.createElement("li");
+  // liElement.innerHTML = `<a href="../404.html" class="lnks">Pagina de Error</a>`;
+  // navIndex.appendChild(liElement);
 
   for (let linksCount = 0; linksCount < linksNumber; linksCount++) {
     var indexArticle = randomIndex(1, articlesDB.length);
