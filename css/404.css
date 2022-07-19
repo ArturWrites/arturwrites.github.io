@@ -1,0 +1,382 @@
+/*@import "Tema_Light.css";*/
+@import "Tema_Dark.css";
+
+* {
+  box-sizing: border-box;
+}
+
+/*Variables para paleta de colores*/
+
+body {
+  /* Body style and background configuration */
+  background-color: var(--color_terciario);
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+}
+
+/*Warapper to limited content max width*/
+.content-wrapper {
+  max-width: 1600px;
+  margin:auto;
+  /*all body is set as a column with display grid property*/
+  display: grid;
+  grid-row-gap: 1rem;
+  grid-template-columns: auto;
+}
+
+a{
+  color: var(--color_secundario);
+}
+
+header{
+  position: sticky;
+  top: -1px;
+  width: 98%;
+  margin: 0.5rem auto;
+  padding: 1rem;
+  color: var(--color_secundario);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border: solid 1px var(--color_extra_1);
+  border-radius: var(--border__radius);
+  box-shadow: var(--color_shadow);
+  background: var(--color_gradiente_menu);
+}
+
+nav{
+  position: fixed;
+  top: 7rem;
+  right: 0;
+
+  border: solid 1px var(--color_extra_1);
+  padding: 1rem;
+
+  border-radius: var(--border__radius);
+  box-shadow: var(--color_shadow);
+  background: var(--color_gradiente_menu);
+
+  transform: translateX(150%);
+  transition: transform 250ms ease-in-out;
+}
+
+nav a{
+  text-decoration: none;
+}
+
+nav ul{
+  list-style-type: none;
+  text-align: right;
+}
+
+nav li{
+  margin: 1rem;
+}
+
+nav span{
+  color: var(--color_extra_3);
+}
+
+nav a:hover{
+  border-bottom: solid 3px var(--color_extra_2);
+}
+
+nav a:active{
+  border-bottom: solid 3px var(--color_extra_3);
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.toogle_Btn{
+  cursor: pointer;
+  z-index: 9;
+  margin: 0.5rem;
+  height: 25px;
+  width: 25px;
+}
+
+.line{
+  margin-top: 3px;
+  height: 3px;
+  background-color: var(--color_extra_2);
+}
+
+.toogle_Btn:active .line{
+ box-shadow: var(--color_shadow_active);
+}
+
+.toogle_Btn_2{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  margin-bottom: 1rem;
+  height: 40px;
+  width: 60px;
+
+  border: solid 1px var(--color_extra_1);
+  border-radius: 0 10px 10px 0;
+  box-shadow: var(--color_shadow);
+  background-color: var(--color_primario);
+}
+
+.line_1{
+  height: 5px;
+  width: 40%;
+  background-color: var(--color_extra_2);
+  transform-origin: 75%;
+  transform: rotate(45deg);
+}
+
+.line_2{
+  height: 5px;
+  width: 40%;
+  background-color: var(--color_extra_2);
+  transform-origin: 75%;
+  transform: rotate(-45deg);
+}
+
+.toogle_Btn_2:active .line_1{
+ box-shadow: var(--color_shadow_active);
+}
+
+.toogle_Btn_2:active .line_2{
+ box-shadow: var(--color_shadow_active);
+}
+
+.main{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.content{
+  width: 100%;
+  padding: 1rem;
+  border: solid 1px var(--color_extra_1);
+
+}
+
+.index_Nav{
+  position: fixed;
+  left: 0;
+  width: 40%;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 0.5rem;
+  height: 30rem;
+}
+
+.index_links{
+
+  padding: 0.5rem;
+  height: 75%;
+  overflow-y: scroll;
+
+  border: solid 1px var(--color_extra_1);
+  border-radius: var(--border__radius);
+  box-shadow: var(--color_shadow);
+  background: var(--color_gradiente_menu);
+
+  transform: translateX(-150%);
+  transition: transform 250ms ease-in-out;
+}
+
+.index_links a{
+  text-decoration: none;
+}
+
+.index_links a:hover{
+  border-bottom: solid 3px var(--color_extra_2);
+}
+
+.index_links a:active{
+  border-bottom: solid 3px var(--color_extra_3);
+}
+
+.index_links ul{
+  list-style-type: none;
+  text-align: left;
+}
+
+.index_links li{
+  display: inline-block;
+  width: 90%;
+  margin: 1rem 0.5rem;
+}
+
+/*Scrollbar personaliztion*/
+.index_links::-webkit-scrollbar {
+    width: .5rem;     /* Tamaño del scroll en vertical */
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb*/
+.index_links::-webkit-scrollbar-thumb {
+    background: var(--color_extra_3);
+    border-radius: 8px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover*/
+.index_links::-webkit-scrollbar-thumb:hover {
+    background: var(--color_extra_2);
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del track*/
+.index_links::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 8px;
+}
+
+.index_Share{
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-top: 1rem;
+  padding: 0.5rem;
+  height: 10%;
+
+  font-size: 1.5em;
+
+  border: solid 1px var(--color_extra_1);
+  border-radius: var(--border__radius);
+  box-shadow: var(--color_shadow);
+  background: var(--color_gradiente_menu);
+
+  transform: translateX(-150%);
+  transition: transform 250ms ease-in-out;
+
+}
+
+.icons_efects i{
+  color: var(--color_extra_2);
+}
+
+.icons_efects i:hover{
+  color: var(--color_extra_3)
+}
+
+.icons_efects i:active{
+  color: var(--color_extra_2);
+}
+
+.footer_share{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: auto;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+
+footer{
+
+  display: grid;
+  gap: 1rem;
+  align-items: center;
+  grid-auto-rows: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr));
+
+  padding: 1rem;
+  margin: 0 1rem 1rem 1rem;
+  text-align: center;
+
+  border: solid 1px var(--color_extra_1);
+  border-radius: var(--border__radius);
+  box-shadow: var(--color_shadow);
+  background: var(--color_gradiente_menu);
+
+}
+
+footer p{
+  color: var(--color_extra_3);
+}
+
+footer span{
+  font-size: 1.5rem;
+}
+
+
+/*CheckBox Button media behavior*/
+
+  input[type="checkbox"]:checked ~ nav {
+      transform: translateX(-5%);
+      transition: transform 250ms ease-in-out;
+  }
+
+  input[type="checkbox"]:checked ~ .index_links {
+      transform: translateX(0%);
+      transition: transform 250ms ease-in-out;
+  }
+
+  input[type="checkbox"]:checked ~ .index_Share {
+      transform: translateX(0%);
+      transition: transform 250ms ease-in-out;
+  }
+
+@media(min-width: 992px){
+  header{
+      width: 100%;
+      z-index: 2;
+  }
+
+  nav{
+    position: static;
+
+    border: none;
+    box-shadow: none;
+    background: none;
+
+    transform: initial;
+  }
+
+  nav ul{
+    list-style-type: none;
+    text-align: center;
+  }
+
+  nav li{
+    display: inline-block;
+  }
+
+  .toogle_Btn{
+    display: none;
+  }
+
+  .toogle_Btn_2{
+    display: none;
+  }
+
+  .index_Nav{
+    position: sticky;
+    width: 25%;
+    top: 8rem;
+    z-index: 1;
+  }
+
+  .index_links{
+    position: static;
+    transform: initial;
+  }
+
+  .index_Share{
+    position: static;
+    transform: initial;
+  }
+
+  .main{
+    flex-direction: row;
+  }
+
+}

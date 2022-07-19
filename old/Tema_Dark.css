@@ -1,0 +1,34 @@
+/*Variables para paleta de colores*/
+:root {
+  /*Paleta de colore Dark*/
+  --color_primario: #827565;
+  --color_secundario: #DCDCDC;/*textHeader Links*/
+  --color_terciario: #3E3E3E;/*bacground*/
+  --color_extra_1: #95642C;/*borders*/
+  --color_extra_2: #FF8700;/*Decorations Icons*/
+  --color_extra_3: #8FE0F5;/*textLight text Active thumb*/
+  --color_text_1: #FFFFFF; /*text color*/
+  --color_gradiente_menu: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(130,117,101,1) 40%, rgba(158,142,123,1) 65%, rgba(191,171,148,1) 98%, rgba(255,135,0,1) 100%);
+
+  --color_shadow: 10px 10px 5px 0px rgba(0,0,0,0.60);
+  --color_shadow_active: 0px 0px 3px 3px rgba(255, 255, 255, 0.4);
+  --border__radius: 10px;
+
+  --color_background_card: #8B8B8B; /*card bacground*/
+  --color_title_index_card:#8FE0F5;
+  --color_link_active_index_card:#FF8700;
+  --color_text_card: #FFFFFF;
+  --color_icons_card: #FF8700;
+  --color_icons_card_active: #8FE0F5;
+  --color_shadow_card: 7px 7px 7px 3px rgba(255, 135, 0, 0.25);
+  --color_shadow_card_active: 7px 7px 7px 3px rgba(78, 217, 226, 0.25);
+  --color_shadow_card_content: 3px 3px rgba(0,0,0,0.6);
+  --border__radius_card: 5px;
+  --border__radius_card_autor: 0 5px 5px 0;
+
+  --color_background_article: #8B8B8B;
+  --color_title_header: #FF8700;
+  --color_date_article: #F6F5F2;
+  --color_info_article: #F6F5F2;
+  --color_text_article: #F6F5F2;
+}

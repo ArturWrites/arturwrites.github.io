@@ -1,0 +1,146 @@
+.heroCardContainer{
+  position: relative;
+  width: 70%;
+  margin: 1rem auto;
+}
+
+.heroBgCard{
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  border-radius: 20px;;
+  box-shadow: var(--color_shadow_card);
+  background-color: var(--color_background_article);
+}
+
+.heroCard{
+  padding: 0.5rem 0.5rem;
+}
+
+.heroCardDesktop{
+  display: none;
+}
+
+.heroCardMobile img{
+  display: block;
+  width: 90%;
+  margin: 0rem auto;
+  border-radius: 20px;
+  box-shadow: var(--color_shadow_card);
+}
+
+.heroCardMobile .heroTitle{
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--color_title_index_card);
+  font-size: 1.25rem;
+}
+
+.heroCardMobile .heroDate{
+  margin-top: 0.25rem;
+  text-align: center;
+  color: var(--color_secundario);
+  font-size: 0.5rem;
+}
+
+.heroCardMobile .heroSinopsis{
+  max-height: 4rem;
+  overflow: hidden;
+  margin-top: 1rem;
+  padding: 0rem 1.5rem;
+  text-align: justify;
+  color: var(--color_secundario);
+  font-size: 0.8rem;
+}
+
+.heroCardMobile a{
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color_title_index_card);
+  font-size: 1.25rem;
+}
+
+.heroCard .heroCardMobile a:hover{
+  color:var(--color_link_active_index_card);
+}
+
+@media(min-width: 750px){
+  .heroCard{
+    padding: 1rem;
+  }
+
+  .heroBgCard{
+    height: 100%;
+  }
+
+  .heroCardDesktop{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-column-gap: 1rem;
+  }
+
+  .heroCardMobile{
+    display: none;
+  }
+
+  .heroCardDesktop .heroSection1 img{
+    display: block;
+    width: 75%;
+    margin: 0rem auto;
+    border-radius: 20px;
+    box-shadow: var(--color_shadow_card);
+  }
+
+  .heroCardDesktop .heroSection1 .heroSinopsis{
+    max-height: 6rem;
+    overflow: hidden;
+    margin-top: 2rem;
+    padding: 0rem 2rem;
+    text-align: justify;
+    color: var(--color_secundario);
+    font-size: 1rem;
+  }
+
+  .heroCardDesktop .heroSection2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5rem;
+  }
+
+  .heroCardDesktop .heroSection2 .heroTitle{
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--color_title_index_card);
+  }
+
+  .heroCardDesktop .heroSection2 .heroDate{
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--color_secundario);
+  }
+
+  .heroCardDesktop .heroSection2 .heroInfo p{
+    font-size: 1.25rem;
+    text-align: center;
+    color: var(--color_secundario);
+  }
+
+  .heroCardDesktop .heroSection2 a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color_title_index_card);
+    font-size: 1.25rem;
+  }
+
+  .heroCardDesktop .heroSection2 a:hover{
+    color:var(--color_link_active_index_card);
+  }
+
+}

@@ -1,0 +1,59 @@
+@import "Tema_Light.css";
+/* @import "Tema_Dark.css"; */
+@import "interface.css";
+@import "cards_styles.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* Body style and background configuration */
+  background-color: var(--color_backGround);
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+}
+
+/*Warapper to limited content max width*/
+.content-wrapper {
+  max-width: 1600px;
+  margin:auto;
+  /*all body is set as a column with display grid property*/
+  display: grid;
+  grid-row-gap: 0;
+  grid-template-columns: auto;
+}
+
+.main{
+  position: relative;
+  display: flex;
+}
+
+.content{
+  width: 100%;
+  padding: 1rem;
+}
+
+.content h1{
+  text-align: center;
+  font-size: var(--font_Size_H1_Library_Mobile);
+  color: var(--color_Title_Library);
+}
+
+.heroSlider{
+  margin-top: 2rem;
+}
+
+.articles_Grid{
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 23rem), 1fr));
+  margin-top: 2rem;
+}
+
+@media(min-width: 992px){
+  .content h1{
+    text-align: center;
+    font-size: var(--font_Size_H1_Library);
+    color: var(--color_Title_Library);
+  }
+}
