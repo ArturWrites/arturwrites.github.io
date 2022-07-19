@@ -60,7 +60,7 @@ export function createCardRelated(indexArticle, myCardsGrid, CardType){
   
         <div class="relatedCardsLinks relatedCardSerieBorderStyle">
           <a href=""><i class="fas fa-share-alt" aria-hidden="true"></i></a>
-          <a href="${articlesDB[indexArticle].link}">Leer</a>
+          <a href="../${articlesDB[indexArticle].link}">Leer</a>
         </div>
   
       </div>
