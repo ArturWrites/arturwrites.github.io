@@ -367,7 +367,7 @@ export function cardGrid(indexArticle, myGrid, cardType){
 
 //+Random Index Generator*/
 export function randomIndex(min, max) {
-  return Math.floor((Math.random() * (max - min + 1)) + min);
+  return Math.floor(Math.random() * (max - min) + min);
 }
 
 //+Related Cards Generator*/
@@ -380,7 +380,7 @@ export function generatorRelatedCards(cardsNumber) {
 
   for (var i = 0; i < cardsNumber; i++) {
 
-    var indexArticle = randomIndex(0, (articlesDB.length - 1));
+    var indexArticle = randomIndex(0, articlesDB.length);
     console.log(indexArticle);
 
     if (articlesDB[indexArticle].tipo == "Historia Original") {
@@ -404,7 +404,7 @@ export function generatorHeroCards(cardsNumber) {
   
   for (var i = 0; i < cardsNumber; i++) {
 
-    var indexArticle = randomIndex(0, (articlesDB.length - 1));
+    var indexArticle = randomIndex(0, articlesDB.length);
     if (articlesDB[indexArticle].tipo == "Historia Original") {
       cardHeroHistoriaOriginal(indexArticle, mySlider);
     }
