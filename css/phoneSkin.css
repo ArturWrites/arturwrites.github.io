@@ -1,0 +1,131 @@
+.phone{
+  max-width: 400px;
+  padding: .75rem;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 7px 7px 10px 0px rgba(0,0,0,0.75);
+}
+
+.nadeshikoPhone{
+  border: solid 1px rgb(157, 155, 30);
+  background-color: rgb(197, 194, 59);
+}
+
+.rinPhone{
+  border: solid 1px rgb(50, 122, 152);
+  background-color: rgb(72, 172, 214);
+}
+
+.phone .phoneHeader{
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  background-color: black;
+  border-radius: 10px 10px 0 0;
+}
+
+.phone .phoneHeader p{
+  color: white;
+  font-size: 0.85rem;
+}
+
+.phone .phoneScreen{
+  padding: 0.5rem;
+  border-radius: 0 0px 10px 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.85) inset;
+}
+
+.nadeshikoPhone .phoneScreen{
+  border: solid 1px rgb(157, 155, 30);
+  background-image: url("../images_originals/Nadeshiko_Selfie.jpg");
+  background-size: cover;
+}
+
+.rinPhone .phoneScreen{
+  border: solid 1px rgb(50, 122, 152);
+  background-image: url("../images_originals/Rin_Bike.jpg");
+  background-size: cover;
+}
+
+.phone .phoneScreen .textBallon{
+  display: flex;
+}
+
+.phone .phoneScreen .textBallon .characterImg{
+  width: 25%;
+  max-height: 2.5rem;
+}
+
+.phone .phoneScreen .textBallon .nadeshiko{
+  background-image: url("../images_originals/Nadeshiko.png");
+  background-position: center;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+.phone .phoneScreen .textBallon .nadeshiko2{
+  background-image: url("../images_originals/Nadeshiko_2.png");
+  background-position: center;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+.phone .phoneScreen .textBallon .rin{
+  background-image: url("../images_originals/Rin.png");
+  background-position: center;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+.phone .phoneScreen .textBallon .rin2{
+  background-image: url("../images_originals/Rin_2.png");
+  background-position: center;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+.phone .phoneScreen .textBallon .message{
+  font-size: 0.85rem;
+  max-width: 75%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.96);
+}
+
+.phone .phoneScreen .textBallon .nadeshikoMessage{
+  border: solid 2px rgb(176, 205, 255);
+  box-shadow: 5px 5px 10px 0px rgba(233, 254, 254, 0.75);
+}
+
+.phone .phoneScreen .textBallon .rinMessage{
+  border: solid 2px rgb(255, 255, 255);
+  box-shadow: 5px 5px 10px 0px rgba(106, 106, 106, 0.75);
+}
+
+.nadeshikoPhone .phoneScreen .rinTextBallon{
+  flex-direction: row-reverse;
+}
+
+.nadeshikoPhone .phoneScreen .rinextBallon .message{
+  text-align: right;
+}
+
+.rinPhone .phoneScreen .nadeshikoTextBallon{
+  flex-direction: row-reverse;
+}
+
+.rinPhone .phoneScreen .nadeshikoTextBallon .message{
+  text-align: right;
+}
+
+.phoneScreen .nadeshikoTextBallon .nadeshikoImg img{
+  width: 100%;
+  border-radius: 8px;
+}
+
+.phoneScreen .rinTextBallon .rinImg img{
+  width: 100%;
+  border-radius: 8px;
+}
