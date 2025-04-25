@@ -3,6 +3,18 @@
 export const articlesDB =
 [
   {
+    nombreBlog:"NewBlog",
+    imagenBlog:"https://lh3.googleusercontent.com/EZOfRgJKIz9mpDVz3JtTerPlzbbcY1uXV3Dq0xFC8nThtoADBBY50ZywrKuz6rmmqM3yz5GfSEfA8F4GYD4zHQQoLJgCwArGA_2Bq4Jvg91n9xeJ_EeMcLIMTo5UMErzkAWAeUtn=w2400",
+    autorBlog:"Artur Writes",
+    sinopsis:"¡Todos en sus posiciones! Exclamo el príncipe Enzo montando un fuerte y brioso caballo negro de batalla. ¡El enemigo se prepara frente a nosotros, demostrémosle de que están hechos los soldados del reino de Pladio!",
+    fecha:"Abril 23, 2025",
+    tipo:"Historia Original",
+    titulo:"none",
+    capitulo:"none",
+    tiempo:"none",
+    link:"historias_originales/newBlog.html"
+  },
+  {
     nombreBlog:"Una Victoria Perdida",
     imagenBlog:"https://lh3.googleusercontent.com/EZOfRgJKIz9mpDVz3JtTerPlzbbcY1uXV3Dq0xFC8nThtoADBBY50ZywrKuz6rmmqM3yz5GfSEfA8F4GYD4zHQQoLJgCwArGA_2Bq4Jvg91n9xeJ_EeMcLIMTo5UMErzkAWAeUtn=w2400",
     autorBlog:"Artur Writes",
