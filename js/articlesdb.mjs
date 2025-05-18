@@ -2,6 +2,18 @@
 
 export const articlesDB =
 [
+    {
+    nombreBlog:"La chica de los audífonos",
+    imagenBlog:"https://lh3.googleusercontent.com/EZOfRgJKIz9mpDVz3JtTerPlzbbcY1uXV3Dq0xFC8nThtoADBBY50ZywrKuz6rmmqM3yz5GfSEfA8F4GYD4zHQQoLJgCwArGA_2Bq4Jvg91n9xeJ_EeMcLIMTo5UMErzkAWAeUtn=w2400",
+    autorBlog:"Artur Writes",
+    sinopsis:"-Vaya día, aunque ya lo veía venir- dijo Hermes en voz baja mientras caminaba agotado y abría la puerta de un bar de marineros a la orilla del mar.",
+    fecha:"Mayo 18, 2025",
+    tipo:"Historia Original",
+    titulo:"none",
+    capitulo:"none",
+    tiempo:"none",
+    link:"historias_originales/la_chica_de_los_audifonos.html"
+  },
   {
     nombreBlog:"En Busca de Tormentas",
     imagenBlog:"https://lh3.googleusercontent.com/EZOfRgJKIz9mpDVz3JtTerPlzbbcY1uXV3Dq0xFC8nThtoADBBY50ZywrKuz6rmmqM3yz5GfSEfA8F4GYD4zHQQoLJgCwArGA_2Bq4Jvg91n9xeJ_EeMcLIMTo5UMErzkAWAeUtn=w2400",
