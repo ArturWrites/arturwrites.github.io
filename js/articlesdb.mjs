@@ -2,6 +2,18 @@
 
 export const articlesDB =
 [
+    {
+    nombreBlog:"Puertas",
+    imagenBlog:"https://lh3.googleusercontent.com/EZOfRgJKIz9mpDVz3JtTerPlzbbcY1uXV3Dq0xFC8nThtoADBBY50ZywrKuz6rmmqM3yz5GfSEfA8F4GYD4zHQQoLJgCwArGA_2Bq4Jvg91n9xeJ_EeMcLIMTo5UMErzkAWAeUtn=w2400",
+    autorBlog:"Artur Writes",
+    sinopsis:"¿Y bien, cual es el resultado de esta? preguntó el hombre de bata blanca y anteojos",
+    fecha:"Mayo 22, 2025",
+    tipo:"Historia Original",
+    titulo:"none",
+    capitulo:"none",
+    tiempo:"none",
+    link:"historias_originales/puertas.html"
+  },
   {
     nombreBlog:"La chica de los audífonos",
     imagenBlog:"https://lh3.googleusercontent.com/EZOfRgJKIz9mpDVz3JtTerPlzbbcY1uXV3Dq0xFC8nThtoADBBY50ZywrKuz6rmmqM3yz5GfSEfA8F4GYD4zHQQoLJgCwArGA_2Bq4Jvg91n9xeJ_EeMcLIMTo5UMErzkAWAeUtn=w2400",
