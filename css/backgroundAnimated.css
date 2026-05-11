@@ -1,0 +1,183 @@
+/**Nota: Para que el background pueda rotar es necesaro que sea mas pequeño que el contenedor, se puso al 75% y con la opcion repeat para ocultar el reeinicio de la animacion logrando asi la continuidad de las hojas */
+
+/**Nota: Todas las capas usan el mismo tiempo de duracion de la animacion*/
+
+/**Nota: Todas las capas usan usan la misma curva de besier para la transicion de la animacion*/
+
+/**Nota: Cada capa tiene un delay manual distinto en la animacion*/
+  
+ /*! Limitacion: Si el viewport se redimenciona las hojas cambian de tamaño segun el tamaño del vieport */ 
+ 
+ :root {
+  /**Configuraciones para el background animado */
+  --tiempoAnimacion: 20s;
+  --besier:cubic-bezier(.56,.31,.42,.68);
+  --image_1: url("https://lh3.googleusercontent.com/pw/AP1GczOlH0t48gx-3W0ko-IzlzFjTJNqvc7cagTpOslVMg2LnhLyRTTKJBbIsAVuv-GZkwaB-ul0YiAVHjx90fmGuBZO4SdR6jd0RbvYgCNr23Taqw7dD3Q=w2400");
+  --image_2: url("https://lh3.googleusercontent.com/pw/AP1GczOnDgG33Duv1DbxcXgG20EJRzu1B0-Ya3M-DPM44YX4cHVoFPtczs9V8iM4NIQHerNIj1llKoawYduc__Rw62j_YrSkV15oCoRcVdXeF1ZC5p_jlxk=w2400.png");
+  --image_3: url("https://lh3.googleusercontent.com/pw/AP1GczMfsdLHrjC_m0N5UqcsYvIm0quolTk_0-pOtlRA2oZRMCy9w_Q8qRbnkf7CyCSh9PaO2sX41Gfe6jNka3kyWDSaZqLaTE2WM5Ri3Xou8vDDtE2MRmc=w2400");
+  --image_4: url("https://lh3.googleusercontent.com/pw/AP1GczNlnyAVbJh3qTf3Vh-RNaA83Va0Pr-k8Oe7ZWHoonMrKg57nlgwi7RzF6fnsuygDCK2SFNkAfBez6XlgCFNPtqVTHALNnFduH9to-6beOyFKWWHs8g=w2400");
+  --image_5: url("https://lh3.googleusercontent.com/pw/AP1GczOSLDSZBGjvgbo0YTocTz2ntKh_7sqxJTkTUo389f2OuoUtbSLkJNfb649uJ9ViG1TbXykjYG4k-lwzh16tqGegsmw2l6zMCtLl8U2DrfrHw79Xuew=w2400");
+  --image_6: url("https://lh3.googleusercontent.com/pw/AP1GczONWL9wkjW10DZyq8bRt3x4pISHE6_kW-ql-fEkzgcWkYEULaMY_8tP0oW1__MQo2NG2Eooj8JYfhmvN4vqNDz_YAgZPEYp8iSOXgr6UfXKz9GtFGo=w2400");
+  --image_7: url("https://lh3.googleusercontent.com/pw/AP1GczMpbmTgh7d9k9xcrL99dYeloCCCH75UmiX6jvhCVjhkw23LCslN2jasYnGc_MkBoUNafqyMeL_mErtxU5rT6RFT1bc7peVa4h1M0uFtmK125rZNQvg=w2400");
+  /**----------------------------------------- */
+}
+
+  /* Marco para referenciar
+  border: solid;
+  border-width: 5px;
+  border-color: red;*/
+
+.inner_background{
+  position:absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.bacground_layer_1{
+  z-index: 1;
+
+  position:absolute;
+  width: 100%;
+  height: 100%;
+
+  background-image: var(--image_1);
+  background-size: 75%;
+  background-repeat: repeat;
+  
+  animation-name: animation_4;
+  animation-delay: -6s;
+  animation-duration: var(--tiempoAnimacion);
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function:var(--besier);
+}
+
+.bacground_layer_2{
+  z-index: 2;
+
+  position:absolute;
+  width: 100%;
+  height: 100%;
+
+  background-image: var(--image_2);
+  background-size: 75%;
+  background-repeat: repeat;
+  
+  animation-name: animation_3;
+  animation-delay: -3s;
+  animation-duration: var(--tiempoAnimacion);
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function:var(--besier);
+}
+
+.bacground_layer_3{
+  z-index: 3;
+
+  position:absolute;
+  width: 100%;
+  height: 100%;
+
+  background-image: var(--image_3);
+  background-size:cover;
+  background-position: 100% 50%;
+  background-clip: content-box;
+  background-repeat: no-repeat;
+}
+
+.bacground_layer_4{
+  z-index: 4;
+
+  position:absolute;
+  width: 100%;
+  height: 100%;
+
+  background-image: var(--image_4);
+  background-size:cover;
+  background-position:bottom;
+  background-clip: content-box;
+  background-repeat: no-repeat;
+}
+
+.bacground_layer_5{
+  z-index: 5;
+
+  position:absolute;
+  width: 100%;
+  height: 100%;
+
+  background-image: var(--image_5);
+  background-size:cover;
+  background-position: 100% 50%;
+  background-clip: content-box;
+  background-repeat: no-repeat;
+}
+
+.bacground_layer_6{
+  z-index: 6;
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  background-image: var(--image_6);
+  background-size: 75%;
+  background-repeat: repeat;
+  
+  animation-name: animation_2;
+  animation-delay: -9s;
+  animation-duration: var(--tiempoAnimacion);
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function:var(--besier);
+}
+
+.bacground_layer_7{
+  z-index: 7;
+
+  position: absolute;
+  width:100%;
+  height: 100%;
+
+  background-image: var(--image_7);
+  background-size: 75%;
+  background-repeat: repeat;
+
+  animation-name: animation_1;
+  animation-delay: -12s;
+  animation-duration: var(--tiempoAnimacion);
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function:var(--besier);
+}
+
+@keyframes animation_1 {
+  from {background-position: 0 0;}
+  to {background-position: -300% 0}
+}
+@keyframes animation_2 {
+  from {background-position: 0 0;}
+  to {background-position: -300% 0}
+}
+
+@keyframes animation_3 {
+  from {background-position: 0 0;}
+  to {background-position: -300% 0}
+}
+@keyframes animation_4 {
+  from {background-position: 0 0;}
+  to {background-position: -300% 0}
+}
+
+@media(min-width: 992px){
+
+  .bacground_layer_3{
+    background-position:bottom;
+  }
+
+  .bacground_layer_5{
+    background-position:bottom;
+
+  }
+}

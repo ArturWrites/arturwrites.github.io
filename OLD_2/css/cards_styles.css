@@ -1,0 +1,561 @@
+  /*+HeroCards*/ 
+  .heroCardContainer{
+    position: relative;
+    width: 80%;
+    margin: 1rem auto;
+  }
+  
+  .heroBgCard{
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    border-radius: var(--border_Radius_Hero_Card);
+    box-shadow: var(--color_Shadow_Hero_Card);
+    background-color: var(--color_Bacground_Hero_Card);
+    border: var(--color_Border_Hero_Card);
+  }
+
+  .heroCardContainer:hover .heroBgCard{
+    box-shadow: var(--color_Shadow_Hero_Card_Active);
+  }
+  
+  .heroCardContent{
+    padding: 0.5rem 0.5rem;
+  }
+  
+  .heroCardDesktopContent{
+    display: none;
+  }
+  
+  .heroCardMobileContent img{
+    display: block;
+    width: 90%;
+    margin: 0rem auto;
+    border-radius: var(--border_Radius_Hero_Card_Image);
+    border: var(--color_Border_Hero_Card);
+    box-shadow: var(--color_Shadow_Hero_Card);
+  }
+  
+  .heroCardMobileContent .heroCardTitle{
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--color_Title_Hero_Card);
+    font-size: var(--font_Size_Title_Hero_Card_Mobile);
+  }
+  
+  .heroCardMobileContent .heroCardDate{
+    margin-top: 0.25rem;
+    text-align: center;
+    color: var(--color_Date_Hero_Card);
+    font-size: var(--font_Size_Date_Hero_Card_Mobile);
+  }
+  
+  .heroCardMobileContent .heroCardSinopsis{
+    max-height: 4rem;
+    overflow: hidden;
+    margin-top: 1rem;
+    padding: 0rem 1.5rem;
+    text-align: justify;
+    color: var(--color_Sinopsis_Hero_Card);
+    font-size: var(--font_Size_Sinopsis_Hero_Card_Mobile);
+  }
+  
+  .heroCardMobileContent .heroCardLinks a{
+    text-align: center;
+    text-decoration: none;
+    color: var(--color_Links_Hero_Card);
+    font-size: var(--font_Size_Links_Hero_Card_Mobile);
+  }
+
+  .heroCardMobileContent .heroCardLinks{
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem auto;
+  }
+  
+  .heroCardMobileContent .heroCardLinks a:hover{
+    color:var(--color_Links_Hero_Card_Active);
+  }
+
+  .heroCardHOStyle{
+    border: var(--color_Border_Hero_Card_HO);
+  }
+
+  .heroCardHOStyleImg img{
+    border: var(--color_Border_Hero_Card_HO);
+  }
+
+  .heroCardContainer:hover .heroCardHOStyle{
+    box-shadow: var(--color_Shadow_Hero_Card_HO_Active);
+  }
+
+  .heroCardSerieStyle{
+    border: var(--color_Border_Hero_Card_Serie);
+  }  
+  
+  .heroCardSerieStyleImg img{
+    border: var(--color_Border_Hero_Card_Serie);
+  }
+
+  .heroCardContainer:hover .heroCardSerieStyle{
+    box-shadow: var(--color_Shadow_Hero_Card_Serie_Active);
+  }
+
+  .heroCardPeliculaStyle{
+    border: var(--color_Border_Hero_Card_Pelicula);
+  }
+  
+  .heroCardPeliculaStyleImg img{
+    border: var(--color_Border_Hero_Card_Pelicula);
+  }
+
+  .heroCardContainer:hover .heroCardPeliculaStyle{
+    box-shadow: var(--color_Shadow_Hero_Card_Pelicula_Active);
+  }
+  
+  @media(min-width: 750px){
+    .heroCardContainer{
+      padding: 1rem;
+    }
+  
+    .heroBgCard{
+      height: 100%;
+    }
+
+    .heroCardContent{
+      padding: 1.5rem 0;
+    }
+  
+    .heroCardDesktopContent{
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      grid-column-gap: 1rem;
+    }
+  
+    .heroCardMobileContent{
+      display: none;
+    }
+  
+    .heroCardDesktopSection1 img{
+      display: block;
+      width: 60%;
+      margin: 0rem auto;
+      border-radius: var(--border_Radius_Hero_Card_Image);
+      border: var(--color_Border_Hero_Card);
+      box-shadow: var(--color_Shadow_Hero_Card);
+    }
+
+    .heroCardHOStyleImg img{
+      border: var(--color_Border_Hero_Card_HO);
+    }
+
+    .heroCardSerieStyleImg img{
+      border: var(--color_Border_Hero_Card_Serie);
+    }
+    
+    .heroCardPeliculaStyleImg img{
+      border: var(--color_Border_Hero_Card_Pelicula);
+    }
+  
+    .heroCardDesktopContent .heroCardSinopsis{
+      max-height: 6rem;
+      overflow: hidden;
+      margin-top: 2rem;
+      padding: 0rem 1rem;
+      text-align: justify;
+      color: var(--color_Sinopsis_Hero_Card);
+      font-size: var(--font_Size_Sinopsis_Hero_Card_Desktop);
+    }
+  
+    .heroCardDesktopSection2{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0.5rem;
+    }
+  
+    .heroCardDesktopTitleSection .heroCardTitle{
+      text-align: center;
+      font-size: var(--font_Size_Title_Hero_Card_Desktop);
+      color: var(--color_Title_Hero_Card);
+    }
+  
+    .heroCardDesktopTitleSection .heroCardDate{
+      text-align: center;
+      font-size: var(--font_Size_Date_Hero_Card_Desktop);
+      color: var(--color_Date_Hero_Card);
+    }
+  
+    .heroCardDesktopInfoSection p{
+      text-align: center;
+      margin: 0.25rem;
+      font-size: var(--font_Size_Info_Hero_Card_Desktop);
+      color: var(--color_Info_Hero_Card);
+    }
+  
+    .heroCardDesktopContent .heroCardLinks a{
+      text-align: center;
+      text-decoration: none;
+      color: var(--color_Links_Hero_Card);
+      font-size: var(--font_Size_Links_Hero_Card_Desktop);
+    }
+  
+    .heroCardDesktopContent .heroCardLinks{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      margin: 1rem auto;
+    }
+    
+    .heroCardDesktopContent .heroCardLinks a:hover{
+      color:var(--color_Links_Hero_Card_Active);
+    }
+  
+  }
+
+  @media(min-width: 900px){
+
+    .heroCardContainer{
+      width: 65%;
+    }
+
+    .heroCardDesktopContent{
+      grid-column-gap: 0;
+    }
+
+    .heroCardDesktopContent .heroCardDesktopSection1 img{
+      width: 70%;
+    }
+  
+    .heroCardDesktopContent .heroCardSinopsis{
+      padding: 0rem 2rem;
+    }
+
+    .heroCardDesktopContent .heroCardLinks{
+      width: 75%;
+    }
+
+  }
+
+  /*+GridCards*/ 
+
+  .gridCardContainer{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    z-index: 1;
+    padding: 1rem;
+  }
+  
+  .gridCardImage{
+    margin: 0 auto;
+    width: 10rem;
+    height: 15rem;
+    border-radius: var(--border_Radius_Grid_Card);
+    box-shadow: var(--color_Shadow_Grid_Card);
+    border: var(--color_Border_Grid_Card);
+    overflow: hidden;
+  }
+  
+  .gridCardContainer:hover .gridCardBg{
+    box-shadow: var(--color_Shadow_Grid_Card_Active);
+  }
+  
+  .gridCardImage img{
+    width: 200%;
+    height: 100%;
+    position: relative;
+    left: -50%;
+  }
+  
+  .gridCardContent{
+    padding: 1rem 1.5rem;
+  }
+  
+  .gridCardHeader{
+    text-align: center;
+  }
+  
+  .gridCardTitle{
+    color: var(--color_Title_Grid_Card);
+    font-size: var(--font_Size_Title_Grid_Card_Mobile);
+  }
+  
+  .gridCardDate{
+    color: var(--color_Date_Grid_Card);
+    font-size: var(--font_Size_Date_Grid_Card_Mobile);
+  }
+  
+  .gridCardInfo{
+    margin-top: 1rem;
+    font-size: var(--font_Size_Info_Grid_Card_Mobile);
+    color: var(--color_Info_Grid_Card);
+    text-align: center;
+  }
+  
+  .gridCardLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 65%;
+    margin: 1.25rem auto 0 auto;
+  }
+  
+  .gridCardLinks a{
+    text-decoration: none;
+    margin-left: 0;
+    color: var(--color_Links_Grid_Card);
+    font-size: var(--font_Size_Links_Grid_Card_Mobile);
+  }
+  
+  .gridCardLinks a:hover{
+    color:var(--color_Links_Grid_Card_Active);
+  }
+  
+  .gridCardBg{
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    border-radius: var(--border_Radius_Grid_Card);
+    border: var(--color_Border_Grid_Card);
+    box-shadow: var(--color_Shadow_Grid_Card);
+    background-color: var(--color_Bacground_Grid_Card);
+  }
+
+  .gridCardHOStyle{
+    border: var(--color_Border_Grid_Card_HO);
+  }
+
+  .gridCardContainer:hover .gridCardHOStyle{
+    box-shadow: var(--color_Shadow_Grid_Card_Active_HO);
+  }
+
+  .gridCardHOStyleImg{
+    border: var(--color_Border_Grid_Card_HO);
+  }
+
+  .gridCardSerieStyle{
+    border: var(--color_Border_Grid_Card_Serie);
+  }
+
+  .gridCardContainer:hover .gridCardSerieStyle{
+    box-shadow: var(--color_Shadow_Grid_Card_Active_Serie);
+  }
+
+  .gridCardSerieStyleImg{
+    border: var(--color_Border_Grid_Card_Serie);
+  }
+
+  .gridCardPeliculaStyle{
+    border: var(--color_Border_Grid_Card_Pelicula);
+  }
+
+  .gridCardContainer:hover .gridCardPeliculaStyle{
+    box-shadow: var(--color_Shadow_Grid_Card_Active_Pelicula);
+  }
+
+  .gridCardPeliculaStyleImg{
+    border: var(--color_Border_Grid_Card_Pelicula);
+  }
+
+  @media (min-width: 700px) {
+
+    .gridCardContainer{
+      width: 50%;
+    }
+
+  }
+  
+  @media (min-width: 800px) {
+  
+    .gridCardContainer{
+      width: 90%;
+      display: grid;
+      grid-gap: 0.5rem;
+      grid-template-columns: 1fr 1.5fr;
+    }
+
+    .gridCardLinks{
+      justify-content: flex-end;
+      width: 100%;
+      margin: 1.25rem auto 0 auto;
+    }
+
+    .gridCardLinks a{
+      margin-left: 1.2rem;
+    }
+  
+    .gridCardContent{
+      align-self: end;
+    }
+  
+    .gridCardImag{
+      margin: 0;
+    }
+  
+    .gridCardContent{
+      padding: 0;
+    }
+  
+    .gridCardInfo{
+      text-align: right;
+    }
+  
+  }
+
+  /*+RelatedCards*/
+
+  .relatedCardContainer{
+    position: relative;
+    width: 100%;
+    height: 45%;
+    box-shadow: var(--color_Shadow_Related_Card);
+    margin-bottom: 2rem;
+  }
+
+  .relatedCardContainer:hover{
+    box-shadow: var(--color_Shadow_Related_Card_Active);
+  }
+
+  .relatedCardContent{
+    position: absolute;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    width: 100%;
+    height: 100%;;
+  }
+
+  .relatedCardBg{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border: var(--color_Border_Related_Card);
+  }
+
+  .relatedCardBg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .relatedCardCover{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .relatedCardAutor{
+    padding: 0.25rem;
+    width: 45%;
+    color: var(--color_Autor_Related_Card);
+    font-size: 0.68rem;
+    background-color: var(--color_Bacground_Related_Card);
+    border-radius: var(--border_Radius_Related_Card_Autor);
+    border: var(--color_Border_Related_Card);
+  }
+
+  .relatedCardTitle{
+    align-self: center;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    width: 80%;
+    color: var(--color_Autor_Related_Card);
+    font-size: var(--font_Size_Autor_Related_Card);
+    background-color: var(--color_Bacground_Related_Card);
+    border-radius: var(--border_Radius_Related_Card);
+    border: var(--color_Border_Related_Card);
+  }
+
+  .relatedCardTitle h2{
+    color: var(--color_Title_Related_Card);
+    font-size: var(--font_Size_Title_Related_Card);
+  }
+
+  .relatedCardDate{
+    color: var(--color_Date_Related_Card);
+    font-size: var(--font_Size_Date_Related_Card);
+  }
+
+  .relatedCardsLinks{
+    align-self: center;
+    padding: 0.25rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+    background-color: var(--color_Bacground_Related_Card);
+    border-radius: var(--border_Radius_Related_Card);
+    border: var(--color_Border_Related_Card);
+  }
+  
+  .relatedCardsLinks a{
+    text-decoration: none;
+    color: var(--color_Links_Related_Card);
+    font-size: var(--font_Size_Links_Related_Card);
+  }
+  
+  .relatedCardsLinks a:hover{
+    color:var(--color_Links_Related_Card_Active);
+  }
+
+  .relatedCardSpine{
+    width: 100%;
+    writing-mode: vertical-rl;
+    text-align: center;
+    color: var(--color_Title_Related_Card);
+    font-size: var(--font_Size_Title_Related_Card_Spine);
+    background-color: var(--color_Bacground_Related_Card);
+    border: var(--color_Border_Related_Card);
+  }
+
+  .relatedCardHOShadowStyle:hover{
+    box-shadow: var(--color_Shadow_Related_Card_Active_HO);
+  }
+
+  .relatedCardHOBorderStyle{
+    border: var(--color_Border_Related_Card_HO);
+  }
+
+  .relatedCardSerieShadowStyle:hover{
+    box-shadow: var(--color_Shadow_Related_Card_Active_Serie);
+  }
+
+  .relatedCardSerieBorderStyle{
+    border: var(--color_Border_Related_Card_Serie);
+  }
+
+  .relatedCardPeliculaShadowStyle:hover{
+    box-shadow: var(--color_Shadow_Related_Card_Active_Pelicula);
+  }
+
+  .relatedCardPeliculaBorderStyle{
+    border: var(--color_Border_Related_Card_Pelicula);
+  }
+
+  @media (min-width: 1430px) {
+    .relatedCardAutor{
+      font-size: 0.9rem;
+    }
+
+    .relatedCardTitle h2{
+      font-size: 1.3rem;;
+    }
+    .relatedCardSpine{
+      font-size: 1rem;
+    }
+  }
+

@@ -1,0 +1,117 @@
+/*! ------------------ page_Default ----------------- */
+.page_Default{
+  margin:  1.5rem 0.75rem;
+  background-color: var(--color_Background_Page);
+  box-shadow: var(--color_Shadow_Article);
+}
+
+@media(min-width: 750px){
+
+  .page_Default{
+    margin: 1.5rem 2rem;
+  }
+}
+
+/*! ------------------------------------------------- */
+
+/*! ---------------- article_content ---------------- */
+.article_content{
+  padding: 1rem 1.25rem;
+}
+/*! ------------------------------------------------- */
+
+/*! ---------------- article_Header ----------------- */
+.article_Header{
+  padding: 1rem 2rem 0 2rem;
+}
+
+.article_Header .titulo{
+  margin: 0;
+  text-align: center;
+  color: var(--color_Title_Article);
+  font-size: var(--font_Size_Title_Article);
+}
+
+.article_Header .fecha{
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: var(--font_Size_Date_Article);
+  color: var(--color_Date_Article);
+}
+
+.article_Header .info_cap{
+  text-align: center;
+  font-size: var(--font_Size_Article_Info);
+  margin: 0.25rem 0;
+  color: var(--color_Info_Article);
+}
+
+.page_Default hr{
+  width: 90%;
+  margin: 2rem auto;
+  background-color: var(--color_Border_Article);
+  border-color: var(--color_Border_Article);
+  box-shadow: none;
+}
+
+@media(min-width: 450px){
+  .article_Header .info_cap{
+    text-align: right;
+  }
+}
+
+@media(min-width: 750px){
+  
+  .article_Header .titulo{
+    font-size: var(--font_Size_Title_Article_Medium);
+  }
+  
+  .article_Header .fecha{
+    font-size: var(--font_Size_Date_Article_Medium);
+  }
+  
+  .article_Header .info_cap{
+    font-size: var(--font_Size_Article_Info_Medium);
+  }
+
+  .page_Default hr{
+    width: 80%;
+  }
+}
+
+/*! ------------------------------------------------- */
+
+/*! ------------------ article_Text ----------------- */
+.article_Text p{
+  margin: 1rem 0;
+  text-align: justify;
+  /* text-indent: 2rem; */
+  font-size: var(--font_Size_Article_Text);
+  color: var(--color_Text_Article);
+}
+
+.article_Text .img_container{
+  text-align: center;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.article_Text .img_container img{
+  width: 75%;
+  border: var(--color_Border_Article_Img);
+  border-radius: var(--border_Radius_Article_Img);
+  box-shadow: var(--color_Shadow_Article);
+}
+
+@media(min-width: 750px){
+  .article_Text{
+    padding: 0 3rem;
+  }
+
+  .article_Text p{
+    font-size: var(--font_Size_Article_Text_Medium);
+  }
+  
+}
+
+/*! ------------------------------------------------- */

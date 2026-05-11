@@ -1,0 +1,8 @@
+/** Hoja de estilos para llamar todos los .css para la interface, esquema de color y los estilos para las tarjetas*/
+/** Nota: Estos css se necesitan en todas las pagianas*/
+/**interface.css contiene los estilos del Body, Content Wrapper, Main, Navigarion Bar y el Inner Wrapper (Todo lo que esta Fuera de Inner Wrapper)*/
+
+/*! Error en la interface al hacer zoom al maximo o al minimo los iconos de la barra de navegacion se salen de proporciones */
+@import "Tema_Light.css";
+@import "interface.css";
+@import "cards_styles.css";

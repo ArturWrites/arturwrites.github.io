@@ -1,0 +1,26 @@
+/*! ---------------------- Pet ---------------------- */
+.pet{
+  display: none;
+  /*border: solid;
+  border-color: red;*/
+}
+
+@media(min-width: 1080px){
+  .pet{
+    display: block;
+  }
+
+  .pet_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .pet_container img{
+    align-self:flex-end;
+    margin: 0 auto;
+    width: 80%;
+    object-fit: contain;
+  }
+}
+/*! ------------------------------------------------- */

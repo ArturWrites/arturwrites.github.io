@@ -1,0 +1,88 @@
+.nav_Bar{
+  order: 2;
+  height: 10vh;
+  border: solid;  
+  display: flex;
+  justify-content: center;
+  border-width: 5px 0 0 0;
+  border-color: black;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #D5D9DA;
+}
+
+.li_Logo{
+  display: none;
+}
+
+.nav_Links{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 0rem;
+
+    /** marco de referencia*/
+    /*
+    border: solid;
+    border-width:  2px;
+    border-color: red;
+    list-style-type: none;
+    */
+    /** marco de referencia*/
+  }
+
+  .nav_Links li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .nav_Links li img{
+    width: 4vh;
+  }
+
+  @media(min-width: 992px){
+    .nav_Bar{
+      order: 1;
+      display: block;
+      height: 100%;
+      padding: 1rem 0;
+      border-width: 0 5px 0 0;
+      border-radius: 10px 0px 0px 10px;
+    }
+    
+    .li_Logo{
+      display: block;
+    }
+
+    .nav_Links{
+      width: 100%;
+      height: 100%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 3fr 1fr 1fr 1fr 1fr 1fr 3fr;
+    }
+
+    .nav_Links :first-child{
+      align-self: start;
+    }
+
+    .nav_Links :last-child{
+      align-self: end;
+    }
+
+    .nav_Links li img{
+      width: 3vh;
+      text-decoration: none;
+    }
+
+  }
+
+  @media(min-width: 1250px){
+    .nav_Links li img{
+    width: 4vh;
+    }
+  }
+
+
+

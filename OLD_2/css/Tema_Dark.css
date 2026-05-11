@@ -1,0 +1,223 @@
+/*Variables para paleta de colores*/
+:root {
+  /**Paleta de Colores Dark*/
+  --color_primario: #827565;
+  --color_secundario: #DCDCDC;
+  --color_backGround: #3b5057;
+  --color_text_default: #FFFFFF; 
+
+  /*+Paleta de Colores Header*/
+  --color_Background_Header: #cdc8b8;
+  --color_Background_Header_Nav: #cdc8b8;
+  --opacity_Nav: 90%;
+  --color_Links_Header: #563a2f;
+  --color_Underline_Link_Header: solid 3px #c55bdf;
+  --color_Active_Page_Header: #c55bdf;
+  --color_Hamburger_Button: #e3905f;
+  --color_Shadow_Header: 0px 0px 5px 2px rgba(170, 170, 170, 1);
+
+
+  --color_Border_Header: solid 1px #FF9900;
+  --border_Radius_Header: 10px;
+
+  --color_Links_Header_Active: #0093B3;
+  --color_Underline_Link_Header_Active:solid 3px #8FE0F5;
+  --color_Shadow_Hamburger_Button_Active: 0px 0px 3px 3px rgba(140, 140, 140, 0.6);
+
+  /*+Paleta de Colores Aside NavBar*/
+  --color_Background_Aside: #cdc8b8;
+  --color_Background_Aside_Button: #cdc8b8;
+  --opacity_Aside: 90%;
+  --color_Text_Aside: #e3905f;
+  --color_Links_Aside: #563a2f;
+  --color_Aside_Button: #e3905f;
+  --color_Shadow_Aside: 0px 0px 5px 2px rgba(170, 170, 170, 1);
+
+ 
+  --color_Border_Aside: solid 1px #FF9900;
+  --border_Radius_Aside: 10px;
+ 
+  --color_Links_Aside_Hover: #c55bdf;
+  --color_Links_Aside_Active: #8FE0F5;
+  --color_Shadow_Aside_Button_Active:  0px 0px 3px 3px rgba(140, 140, 140, 0.6);
+
+  --font_Size_Aside_Title: 0.6rem;
+  --font_Size_Aside: 0.9rem;
+
+  --font_Size_Aside_Title_Desktop: 1rem;
+  --font_Size_Aside_Desktop: 1rem;
+
+  /*+Paleta de Colores Footer*/
+  --color_Background_Footer: #cdc8b8;
+  --color_Text_Footer: #563a2f;
+  --color_Links_Footer: #7075ea;
+  --color_Shadow_Footer: 0px 0px 5px 2px rgba(170, 170, 170, 1);
+
+ 
+  --color_Border_Footer: solid 1px #FF9900;
+  --border_Radius_Footer: 10px;
+ 
+  --color_Links_Footer_Hover: #e3905f;
+  --color_Links_Footer_Active: #F6F5F2;
+
+  --font_Size_Coffee: 0.75rem;
+  --font_Size_Thanks: 0.9rem;
+  --font_Size_Icons: 1.3rem;
+
+  --font_Size_Coffee_Desktop: 1rem;
+  --font_Size_Thanks_Desktop: 1rem;
+  --font_Size_Icons_Desktop: 1.5rem;
+
+  /*+Paleta de colores de la Interfaz*/ 
+  /* --color_Background_Interfaz: linear-gradient(0deg, rgba(255,135,0,1) 0%, rgba(255,159,49,1) 82%, rgba(248,223,194,1) 100%);
+  --color_Title_Interfaz: #0093B3;
+  --color_Links_Interfaz: #0093B3;
+  --color_Icons_Interfaz: #8FE0F5;
+  --color_Shadow_Interfaz: 10px 10px 5px 0px rgba(0,0,0,0.60);
+
+  --color_Links_Interfaz_Active: #F6F5F2;
+  --color_Icons_Interfaz_Active: #F6F5F2;
+
+  --color_Border_Interfaz: #FF9900;
+  --color_Border_Links_Interfaz: #8FE0F5;
+
+  --font_Size_Title_Interfaz: 1rem;
+  --font_Size_Links_Interfaz: 1rem;
+  --font_Size_Icons_Interfaz: 1rem; */
+
+  /*+Paleta de colores de las HeroCard*/ 
+  --color_Bacground_Hero_Card: #cdc8b8;
+  --color_Title_Hero_Card: #e3905f;
+  --color_Date_Hero_Card: #c55bdf;
+  --color_Sinopsis_Hero_Card: #563a2f;
+  --color_Info_Hero_Card: #563a2f;
+  --color_Links_Hero_Card: #7075ea;
+  --color_Shadow_Hero_Card: 0px 0px 5px 2px rgba(170, 170, 170, 1);
+
+  --color_Links_Hero_Card_Active: #FF8700;
+  --color_Shadow_Hero_Card_Active: 5px 5px 15px 5px rgba(255, 135, 0, 0.5);
+  --color_Shadow_Hero_Card_HO_Active: 5px 5px 15px 5px rgba(10, 142, 12, 0.5);
+  --color_Shadow_Hero_Card_Serie_Active: 5px 5px 15px 5px rgba(0, 147, 179, 0.5);
+  --color_Shadow_Hero_Card_Pelicula_Active: 5px 5px 15px 5px rgba(213, 80, 231, 0.5);
+
+  --color_Border_Hero_Card: solid 1px rgba(255, 135, 0, 0.75);
+  --color_Border_Hero_Card_HO: solid 2px rgba(10, 142, 12, 0.75);
+  --color_Border_Hero_Card_Serie: solid 2px rgba(0, 147, 179, 0.75);
+  --color_Border_Hero_Card_Pelicula: solid 2px rgba(213, 80, 231, 0.75);
+
+  --border_Radius_Hero_Card: 10px;
+  --border_Radius_Hero_Card_Image: 10px;
+
+  --font_Size_Title_Hero_Card_Mobile: 1.3rem;
+  --font_Size_Date_Hero_Card_Mobile: 0.75rem;
+  --font_Size_Sinopsis_Hero_Card_Mobile: 0.9rem;
+  --font_Size_Info_Hero_Card_Mobile: 1rem;
+  --font_Size_Links_Hero_Card_Mobile: 1.2rem;
+
+  --font_Size_Title_Hero_Card_Desktop: 1.6rem;
+  --font_Size_Date_Hero_Card_Desktop: 0.9rem;
+  --font_Size_Sinopsis_Hero_Card_Desktop: 1.2rem;
+  --font_Size_Info_Hero_Card_Desktop: 1.2rem;
+  --font_Size_Links_Hero_Card_Desktop: 1.2rem;
+
+  /*+Paleta de colores de las GridCard*/ 
+
+  --color_Bacground_Grid_Card: #cdc8b8;
+  --color_Title_Grid_Card: #e3905f;
+  --color_Date_Grid_Card: #c55bdf;
+  --color_Sinopsis_Grid_Card: #563a2f;
+  --color_Info_Grid_Card: #563a2f;
+  --color_Links_Grid_Card: #7075ea;
+  --color_Title_Library: #563a2f;
+  --color_Shadow_Grid_Card: 0px 0px 5px 2px rgba(170, 170, 170, 1);
+
+
+  --color_Links_Grid_Card_Active: #FF8700;
+  --color_Shadow_Grid_Card_Active: 5px 5px 15px 5px rgba(255, 135, 0, 0.5);
+  --color_Shadow_Grid_Card_Active_HO: 5px 5px 15px 5px rgba(10, 142, 12, 0.5);
+  --color_Shadow_Grid_Card_Active_Serie: 5px 5px 15px 5px rgba(0, 147, 179, 0.5);
+  --color_Shadow_Grid_Card_Active_Pelicula: 5px 5px 15px 5px rgba(213, 80, 231, 0.5);
+
+  --color_Border_Grid_Card: solid 1px rgba(255, 135, 0, 0.75);
+  --color_Border_Grid_Card_HO: solid 2px rgba(10, 142, 12, 0.75);
+  --color_Border_Grid_Card_Serie: solid 2px rgba(0, 147, 179, 0.75);
+  --color_Border_Grid_Card_Pelicula: solid 2px rgba(213, 80, 231, 0.75);
+
+  --border_Radius_Grid_Card: 10px;
+  --border_Radius_Grid_Card_Image: 10px;
+
+  --font_Size_Title_Grid_Card_Mobile: 1.1rem;
+  --font_Size_Date_Grid_Card_Mobile: 0.8rem;
+  --font_Size_Info_Grid_Card_Mobile: 0.9rem;
+  --font_Size_Links_Grid_Card_Mobile: 1.1rem;
+  --font_Size_H1_Library_Mobile: 1.75rem;
+
+  --font_Size_Title_Grid_Card: 1rem;
+  --font_Size_Date_Grid_Card: 1rem;
+  --font_Size_Sinopsis_Grid_Card: 1rem;
+  --font_Size_Info_Grid_Card: 1rem;
+  --font_Size_Links_Grid_Card: 1rem;
+  --font_Size_H1_Library: 2.5rem;
+
+  /*+Paleta de colores de la RelatedCard*/ 
+
+  --color_Bacground_Related_Card: #cdc8b8;
+  --color_Title_Related_Card: #e3905f;
+  --color_Date_Related_Card: #c55bdf;
+  --color_Autor_Related_Card: #563a2f;
+  --color_Links_Related_Card: #7075ea;
+  --color_Shadow_Related_Card: 0px 0px 5px 2px rgba(170, 170, 170, 1);
+
+  --color_Links_Related_Card_Active: #FF8700;
+  --color_Shadow_Related_Card_Active: 0px 0px 5px 2px rgba(255, 135, 0, 0.5);
+  --color_Shadow_Related_Card_Active_HO: 0px 0px 5px 2px rgba(10, 142, 12, 0.5);
+  --color_Shadow_Related_Card_Active_Serie: 0px 0px 5px 2px rgba(0, 147, 179, 0.5);
+  --color_Shadow_Related_Card_Active_Pelicula: 0px 0px 5px 2px rgba(213, 80, 231, 0.5);
+
+  --color_Border_Related_Card: solid 1px rgba(255, 135, 0, 0.75);
+  --color_Border_Related_Card_HO: solid 2px rgba(10, 142, 12, 0.75);
+  --color_Border_Related_Card_Serie: solid 2px rgba(0, 147, 179, 0.75);
+  --color_Border_Related_Card_Pelicula: solid 2px rgba(213, 80, 231, 0.75);
+
+  --border_Radius_Related_Card: 5px;
+  --border_Radius_Related_Card_Autor: 0 0 5px 0;
+
+  --font_Size_Title_Related_Card: 0.9rem;
+  --font_Size_Title_Related_Card_Spine: 0.9em;
+  --font_Size_Date_Related_Card: 0.75rem;
+  --font_Size_Links_Related_Card: 1.15rem;
+
+  /*+Paleta de colores del Contenido de los articulos*/ 
+  --color_Background_Article: #3b5057;
+  --color_Background_Page: #575c65;
+  --color_Title_Article: #e3905f;
+  --color_Date_Article: #c55bdf;
+  --color_Info_Article: #b1b1b1;
+  --color_Text_Article: #b1b1b1;
+
+  --color_Shadow_Article: 0px 0px 5px 2px rgba(170, 170, 170, 1);
+
+  --color_Border_Article: #c55bdf;
+  --border_Radius_Article_Img: 10px;
+
+  --color_Border_Article_Img: solid 1px rgba(255, 135, 0, 0.5);
+  --color_Border_Article_Img_HO: solid 2px rgba(249, 244, 92, 0.75);
+  --color_Border_Article_Img_Serie: solid 2px rgba(0, 147, 179, 0.6);
+  --color_Border_Article_Img_Pelicula: solid 2px rgba(143, 224, 245, 0.6);
+
+  --font_Size_Title_Article: 1.4rem;
+  --font_Size_Date_Article: 0.75rem;
+  --font_Size_Article_Info: 0.9rem;
+  --font_Size_Article_Text: 1rem;
+
+  --font_Size_Title_Article_Medium: 1.75rem;
+  --font_Size_Date_Article_Medium: 0.75rem;
+  --font_Size_Article_Info_Medium: 0.9rem;
+  --font_Size_Article_Text_Medium: 1.25rem;
+
+  /* --font_Size_Title_Article_Large: 0.9rem;
+  --font_Size_Date_Article_Large: 0.75rem;
+  --font_Size_Article_Info_Large: 1.15rem;
+  --font_Size_Article_Text_Large: 1.15rem; */
+
+}

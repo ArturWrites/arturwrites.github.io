@@ -1,0 +1,127 @@
+/** Hoja de estilos para el contenido de todas las paginas de Blogs */
+
+/*! ----------------- Inner Wrapper ----------------- */
+.inner-warapper{
+    width: 100%;
+}
+
+@media(min-width: 1080px){
+  .inner-warapper{
+    display: grid;
+    grid-template-columns: 1.25fr 3fr 0.5fr;
+  }
+}
+
+/*! ------------------------------------------------- */
+
+/*! --------------------- Aside --------------------- */
+.asideBlog{
+  display: none;
+}
+
+@media(min-width: 1080px){
+  .asideBlog{
+    display: block;
+  }
+}
+
+/*! ------------------------------------------------- */
+
+/*! -------------------- Header --------------------- */
+/*.header{
+  border: solid;
+  border-color: red;
+}*/
+
+.header h1{
+  margin: 0.75rem 1rem 0 1rem;
+  font-size: 2.5rem;
+  text-shadow: 
+    0 0 5px #E8E8E8, 
+    0 0 10px #E8E8E8, 
+    0 0 15px #E8E8E8, 
+    0 0 20px #E8E8E8, 
+    0 0 30px #E8E8E8, 
+    0 0 40px #E8E8E8, 
+    0 0 55px #E8E8E8, 
+    0 0 75px #E8E8E8;
+}
+
+.header hr{
+  border: solid;
+  border-width: 2px;
+  border-radius: 0px;
+  width: 75%;
+  border-color: black;
+}
+
+/*! ------------------------------------------------- */
+
+/*! ----------------- Cards Related ----------------- */
+.cards{
+  padding: 1rem 3rem;
+  height: 90vh;
+}
+/*! ------------------------------------------------- */
+
+/*! ---------------- articleContent ----------------- */
+/*? La altura maxima esta colocada a prueba y error*/
+/*TODO: Buscar la manera que la altura dependa del contenedor padre*/
+.articleContent{
+  width: 100%;
+  max-height: 85vh;
+  margin: auto 0;
+  /*border: solid;
+  border-color: yellow;*/
+  overflow: auto;
+}
+
+.articleContent::-webkit-scrollbar{
+  width: 8px;
+  background-color:  none;
+  border-radius: 20px;
+}
+
+.articleContent::-webkit-scrollbar-thumb  {
+  background-color: var(--color_primario);
+  border-radius: 6px;
+}
+
+@media(min-width: 992px){
+  .articleContent{
+    max-height: 95vh;
+  }
+}
+/*! ------------------------------------------------- */
+
+/*! --------------------- footer -------------------- */
+.footer{
+  width: 50%;
+  padding-bottom: 2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer h3{
+  margin: 0.75rem 0;
+}
+
+.footer i{
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  color: var(--color_primario);
+}
+
+.footer i:hover{
+  color: var(--color_secundario);
+  text-shadow: 
+      0 0 5px var(--color_primario), 
+      0 0 10px var(--color_primario), 
+      0 0 15px var(--color_primario), 
+      0 0 20px var(--color_primario), 
+      0 0 30px var(--color_primario), 
+      0 0 40px var(--color_primario), 
+      0 0 55px var(--color_primario), 
+      0 0 75px var(--color_primario);
+}
+/*! ------------------------------------------------- */

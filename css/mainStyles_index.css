@@ -1,0 +1,8 @@
+/**Hoja de estilos para llamar todos los .css para las paginas index, Series, Peliculas, Historias Originales y Biblioteca*/
+
+/**content_index.css contiene los estilos del header, el sliders de links para los blogs y el footer (Todo lo que esta dentro de Inner Wrapper)*/
+
+@import "content_index.css";
+@import "backgroundAnimated.css";
+
+

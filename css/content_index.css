@@ -1,0 +1,160 @@
+/** Hoja de estilos para el contenido de las paginas: */
+/** index, series, peliculas, historias originales y biblioteca */
+/** Nota: Todo lo que esta dentro del bloque Inner Wrapper*/
+/** Header Styles */
+/** Content Slider Styles*/
+/** Footer Styles*/
+
+/*! ----------------- Header Styles ----------------- */
+
+.header{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items:end;
+  z-index: 10;
+  width: 100%;
+}
+
+.header h1{
+  margin: 0.75rem 1rem 0 1rem;
+  font-size: 2.5rem;
+  text-shadow: 
+    0 0 5px #E8E8E8, 
+    0 0 10px #E8E8E8, 
+    0 0 15px #E8E8E8, 
+    0 0 20px #E8E8E8, 
+    0 0 30px #E8E8E8, 
+    0 0 40px #E8E8E8, 
+    0 0 55px #E8E8E8, 
+    0 0 75px #E8E8E8;
+}
+
+.header hr{
+  border: solid;
+  border-width: 2px;
+  border-radius: 0px;
+  width: 50%;
+  border-color: black;
+}
+
+@media(min-width: 700px){
+  .header{
+    align-items:start;
+  }
+}
+
+@media(min-width: 775px){
+  .header hr{
+    width: 30%;
+  }
+}
+
+/*! ------------------------------------------------- */
+
+/*! ------------- Content Slider Styles ------------- */
+
+.content{
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 70vh;
+  padding: 2rem;
+  overflow: auto;
+  /*border: solid;
+  border-width: 4px;
+  border-color: blue;*/
+}
+
+.content::-webkit-scrollbar{
+  width: 8px;
+  background-color: none;
+  border-radius: 20px;
+}
+
+.content::-webkit-scrollbar-thumb  {
+  background-color: var(--color_primario);
+  border-radius: 6px;
+}
+
+.articles_Grid{
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 23rem), 1fr));
+  margin-top: 2rem;
+}
+
+@media (min-width: 800px) and (max-width: 873px) {
+  .articles_Grid{
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+/*! ------------------------------------------------- */
+
+/*! ----------------- Footer Styles ----------------- */
+
+.footer{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  z-index: 10;
+  width: 100%;
+  margin-bottom: 1rem;
+  /*border: solid;
+  border-width: 4px;
+  border-color: blue;*/
+}
+
+.footer h3{
+  text-align: center;
+  font-size: 1rem;
+  color: var(--text_default);
+  text-shadow: 
+      0 0 5px #E8E8E8, 
+      0 0 10px #E8E8E8, 
+      0 0 15px #E8E8E8, 
+      0 0 20px #E8E8E8, 
+      0 0 30px #E8E8E8, 
+      0 0 40px #E8E8E8, 
+      0 0 55px #E8E8E8, 
+      0 0 75px #E8E8E8;
+}
+
+.footer i{
+  font-size: 2rem;
+  color: var(--color_primario);
+  text-shadow: 
+      0 0 5px var(--color_backGround), 
+      0 0 10px var(--color_backGround), 
+      0 0 15px var(--color_backGround), 
+      0 0 20px var(--color_backGround), 
+      0 0 30px var(--color_backGround), 
+      0 0 40px var(--color_backGround), 
+      0 0 55px var(--color_backGround), 
+      0 0 75px var(--color_backGround);
+}
+
+.footer i:hover{
+  color: var(--color_secundario);
+  text-shadow: 
+      0 0 5px var(--color_primario), 
+      0 0 10px var(--color_primario), 
+      0 0 15px var(--color_primario), 
+      0 0 20px var(--color_primario), 
+      0 0 30px var(--color_primario), 
+      0 0 40px var(--color_primario), 
+      0 0 55px var(--color_primario), 
+      0 0 75px var(--color_primario);
+}
+
+@media(min-width: 992px){
+  .footer{
+    width:60%;
+  }
+}
+
+/*! ------------------------------------------------- */
+
