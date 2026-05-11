@@ -3,18 +3,6 @@
 export const articlesDB =
 [
     {
-    nombreBlog:"Nuevo",
-    imagenBlog:"https://lh3.googleusercontent.com/EZOfRgJKIz9mpDVz3JtTerPlzbbcY1uXV3Dq0xFC8nThtoADBBY50ZywrKuz6rmmqM3yz5GfSEfA8F4GYD4zHQQoLJgCwArGA_2Bq4Jvg91n9xeJ_EeMcLIMTo5UMErzkAWAeUtn=w2400",
-    autorBlog:"Artur Writes",
-    sinopsis:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    fecha:"Enero 01, 2099",
-    tipo:"Serie",
-    titulo:"Nombre serie",
-    capitulo:"Capitulo: 99",
-    tiempo:"Min. 99:99 - 11:99",
-    link:"../blogs_plantilla/nuevo_blog.html"
-  },
-    {
     nombreBlog:"Puertas",
     imagenBlog:"https://lh3.googleusercontent.com/EZOfRgJKIz9mpDVz3JtTerPlzbbcY1uXV3Dq0xFC8nThtoADBBY50ZywrKuz6rmmqM3yz5GfSEfA8F4GYD4zHQQoLJgCwArGA_2Bq4Jvg91n9xeJ_EeMcLIMTo5UMErzkAWAeUtn=w2400",
     autorBlog:"Artur Writes",
