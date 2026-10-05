@@ -42,6 +42,7 @@ images_originals/
 old/
 OLD2/
 blogs_plantilla/
+documentation/
 
 # Typescript v1 declaration files
 typings/
