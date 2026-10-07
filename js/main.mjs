@@ -14,6 +14,7 @@ import { generatorIndexGridCards } from "./cardsBuilder.mjs";
 import { generatorHeroCards } from "./cardsBuilder.mjs";
 import { generatorLibrariesGridCards } from "./cardsBuilder.mjs";
 import { generatorRelatedCards } from "./cardsBuilder.mjs";
+import { articleCardGenerator } from "./cardsBuilder.mjs";
 
 
 //** Rutinas constructora de paginas */

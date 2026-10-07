@@ -245,6 +245,131 @@
 
   }
 
+/*+Article Cards*/ 
+
+  .articleCardContainer{
+    position: relative;
+    z-index: 1;
+    padding: 1rem;
+  }
+  
+  .articleCardImage{
+    margin: 0 auto;
+    width: 10rem;
+    height: 15rem;
+    border-radius: var(--border_Radius_Grid_Card);
+    box-shadow: var(--color_Shadow_Grid_Card);
+    border: var(--color_Border_Grid_Card);
+    overflow: hidden;
+  }
+  
+  .articleContainer:hover .articleCardBg{
+    box-shadow: var(--color_Shadow_Grid_Card_Active);
+  }
+  
+  .articleCardImage img{
+    width: 200%;
+    height: 100%;
+    position: relative;
+    left: -50%;
+  }
+  
+  .articleCardContent{
+    padding: 1rem 1.5rem;
+  }
+  
+  .articleCardHeader{
+    text-align: center;
+  }
+  
+  .articleCardTitle{
+    color: var(--color_Title_Grid_Card);
+    font-size: var(--font_Size_Title_Grid_Card_Mobile);
+  }
+  
+  .articleCardDate{
+    color: var(--color_Date_Grid_Card);
+    font-size: var(--font_Size_Date_Grid_Card_Mobile);
+  }
+  
+  .articleCardInfo{
+    margin-top: 1rem;
+    font-size: var(--font_Size_Info_Grid_Card_Mobile);
+    color: var(--color_Info_Grid_Card);
+    text-align: center;
+  }
+  
+  .articleCardLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 65%;
+    margin: 1.25rem auto 0 auto;
+  }
+  
+  .articleCardLinks a{
+    text-decoration: none;
+    margin-left: 0;
+    color: var(--color_Links_Grid_Card);
+    font-size: var(--font_Size_Links_Grid_Card_Mobile);
+  }
+  
+  .articleCardLinks a:hover{
+    color:var(--color_Links_Grid_Card_Active);
+  }
+  
+  .articleCardBg{
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    border-radius: var(--border_Radius_Grid_Card);
+    border: var(--color_Border_Grid_Card);
+    box-shadow: var(--color_Shadow_Grid_Card);
+    background-color: var(--color_Bacground_Grid_Card);
+  }
+
+  .articleCardHOStyle{
+    border: var(--color_Border_Grid_Card_HO);
+  }
+
+  .articleCardContainer:hover .articleCardHOStyle{
+    box-shadow: var(--color_Shadow_Grid_Card_Active_HO);
+  }
+
+  .articleCardHOStyleImg{
+    border: var(--color_Border_Grid_Card_HO);
+  }
+
+  .articleCardSerieStyle{
+    border: var(--color_Border_Grid_Card_Serie);
+  }
+
+  .articleCardContainer:hover .articleCardSerieStyle{
+    box-shadow: var(--color_Shadow_Grid_Card_Active_Serie);
+  }
+
+  .articleCardSerieStyleImg{
+    border: var(--color_Border_Grid_Card_Serie);
+  }
+
+  .articleCardPeliculaStyle{
+    border: var(--color_Border_Grid_Card_Pelicula);
+  }
+
+  .articleCardContainer:hover .articleCardPeliculaStyle{
+    box-shadow: var(--color_Shadow_Grid_Card_Active_Pelicula);
+  }
+
+  .articleCardPeliculaStyleImg{
+    border: var(--color_Border_Grid_Card_Pelicula);
+  }
+
+
+
+
   /*+GridCards*/ 
 
   .gridCardContainer{

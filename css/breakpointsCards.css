@@ -1,0 +1,47 @@
+ /** Hoja de breakpoints para las Cards de cada articulo que se usaran solo en las paginas de index, historias_originales, series, peliculas y bliblioteca */
+ 
+ @media (min-width: 700px) {
+
+    .articleCardContainer{
+      width: 70%;
+      margin: 0 auto;
+    }
+
+  }
+  
+  @media (min-width: 800px) {
+  
+    .articleCardContainer{
+      width: 90%;
+      display: grid;
+      grid-gap: 0.5rem;
+      grid-template-columns: 1fr 1.5fr;
+    }
+
+    .articleCardLinks{
+      justify-content: flex-end;
+      width: 100%;
+      margin: 1.25rem auto 0 auto;
+    }
+
+    .articleCardLinks a{
+      margin-left: 1.2rem;
+    }
+  
+    .articleCardContent{
+      align-self: end;
+    }
+  
+    .articleCardImag{
+      margin: 0;
+    }
+  
+    .articleCardContent{
+      padding: 0;
+    }
+  
+    .articleCardInfo{
+      text-align: right;
+    }
+  
+  }

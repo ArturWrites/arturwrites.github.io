@@ -4,110 +4,55 @@ import { articlesDB } from "./articlesdb.mjs";
 
 //+Create cards Functions*/
 
-//+Related Card*/
-//*Historia Original Related Card*/
-export function createCardRelatedHistoriaOriginal(indexArticle, myCardsGrid, cardType){
-  const  cardRelated = document.createElement("div");
-  cardRelated.className += ("relatedCardContainer relatedCardHOShadowStyle");
-  cardRelated.innerHTML = `
-  <div class="relatedCardContent">
-
-    <div class="relatedCardCover">
-
-      <p class="relatedCardAutor relatedCardHOBorderStyle">${articlesDB[indexArticle].autorBlog}</p>
-
-      <div class="relatedCardTitle relatedCardHOBorderStyle">
-        <h2>${articlesDB[indexArticle].nombreBlog}</h2>
-        <p class="relatedCardDate">${articlesDB[indexArticle].fecha}</p>
+//+Article Card*/
+//*Article Card*/
+export function articleCardGenerator(indexArticle, myCardsGrid, cardType){
+  const  articleCard = document.createElement("div");
+  articleCard.className += ("articleCardContainer");
+  articleCard.innerHTML = `
+      <div id="articleCardImage" class="articleCardImage">
+        <img src="${articlesDB[indexArticle].imagenBlog} " alt="">
       </div>
-
-      <div class="relatedCardsLinks relatedCardHOBorderStyle">
-        <a href=""><i class="fas fa-share-alt" aria-hidden="true"></i></a>
-        <a href="../${articlesDB[indexArticle].link}">Leer</a>
-      </div>
-
-    </div>
-
-    <div class="relatedCardSpine relatedCardHOBorderStyle">
-      <h2>${articlesDB[indexArticle].tipo}</h2>
-    </div>
-  </div>
-
-  <div class="relatedCardBg relatedCardHOBorderStyle">
-    <img src="${articlesDB[indexArticle].imagenBlog}" alt="">
-  </div>
-  `;
-  
-  myCardsGrid.appendChild(cardRelated);
-}
-//*Series y Peliculas Related Card*/
-export function createCardRelated(indexArticle, myCardsGrid, CardType){
-  const  cardRelated = document.createElement("div");
-
-  if(CardType == "Serie"){
-    cardRelated.className += ("relatedCardContainer relatedCardSerieShadowStyle");
-    cardRelated.innerHTML = `
-    <div class="relatedCardContent">
-  
-      <div class="relatedCardCover">
-  
-        <p class="relatedCardAutor relatedCardSerieBorderStyle">${articlesDB[indexArticle].autorBlog}</p>
-  
-        <div class="relatedCardTitle relatedCardSerieBorderStyle">
-          <h2>${articlesDB[indexArticle].nombreBlog}</h2>
-          <p class="relatedCardDate">${articlesDB[indexArticle].fecha}</p>
+    
+      <div class="articleCardContent">
+        <div class="articleCardHeader">
+          <h2 class="articleCardTitle">${articlesDB[indexArticle].nombreBlog}</h2>
+          <p class="articleCardDate">${articlesDB[indexArticle].fecha}</p>
         </div>
-  
-        <div class="relatedCardsLinks relatedCardSerieBorderStyle">
-          <a href=""><i class="fas fa-share-alt" aria-hidden="true"></i></a>
-          <a href="../${articlesDB[indexArticle].link}">Leer</a>
+        <div class="articleCardInfo">
+          <p>${articlesDB[indexArticle].tipo}</p>
         </div>
-  
+        <div class="articleCardLinks">
+          <a href=""><i class="fas fa-share-alt"></i></a>
+          <a href="${articlesDB[indexArticle].link}">Leer</a>
+        </div>
       </div>
-  
-      <div class="relatedCardSpine relatedCardSerieBorderStyle">
-        <h2>${articlesDB[indexArticle].titulo}</h2>
-      </div>
-    </div>
-  
-    <div class="relatedCardBg relatedCardSerieBorderStyle">
-      <img src="${articlesDB[indexArticle].imagenBlog}" alt="">
-    </div>
-    `;
+    
+      <div id="articleCardBg" class="articleCardBg"></div>
+      `;
+  //? Creamos una variable temporarl donde seleccionamos el elemento por id para agregar la clase que dara el estilo al borde y a la sombra de la tarjeta de los elementos img y bacground, no es necesario hacer nadamas para que esta clase se agrege a la variable que almacena la tarjeta final (articleCard)
+  if(cardType=="Historia Original"){
+    const addShadowclassImg = articleCard.querySelector('#articleCardImage');
+    addShadowclassImg.classList.add('articleCardHOStyleImg');
+    const addShadowclassBg = articleCard.querySelector('#articleCardBg');
+    addShadowclassBg.classList.add('articleCardHOStyle');
   }
 
-  if(CardType == "Pelicula"){
-    cardRelated.className += ("relatedCardContainer relatedCardPeliculaShadowStyle");
-    cardRelated.innerHTML = `
-    <div class="relatedCardContent">
-  
-      <div class="relatedCardCover">
-  
-        <p class="relatedCardAutor relatedCardPeliculaBorderStyle">${articlesDB[indexArticle].autorBlog}</p>
-  
-        <div class="relatedCardTitle relatedCardPeliculaBorderStyle">
-          <h2>${articlesDB[indexArticle].nombreBlog}</h2>
-          <p class="relatedCardDate">${articlesDB[indexArticle].fecha}</p>
-        </div>
-  
-        <div class="relatedCardsLinks relatedCardPeliculaBorderStyle">
-          <a href=""><i class="fas fa-share-alt" aria-hidden="true"></i></a>
-          <a href="../${articlesDB[indexArticle].link}">Leer</a>
-        </div>
-  
-      </div>
-  
-      <div class="relatedCardSpine relatedCardPeliculaBorderStyle">
-        <h2>${articlesDB[indexArticle].titulo}</h2>
-      </div>
-    </div>
-  
-    <div class="relatedCardBg relatedCardPeliculaBorderStyle">
-      <img src="${articlesDB[indexArticle].imagenBlog}" alt="">
-    </div>
-    `;
+  if(cardType=="Serie"){
+    const addShadowclassImg = articleCard.querySelector('#articleCardImage');
+    addShadowclassImg.classList.add('articleCardSerieStyleImg');
+    const addShadowclassBg = articleCard.querySelector('#articleCardBg');
+    addShadowclassBg.classList.add('articleCardSerieStyle');
   }
-  myCardsGrid.appendChild(cardRelated);
+
+    if(cardType=="Pelicula"){
+    const addShadowclassImg = articleCard.querySelector('#articleCardImage');
+    addShadowclassImg.classList.add('articleCardPeliculaStyleImg');
+    const addShadowclassBg = articleCard.querySelector('#articleCardBg');
+    addShadowclassBg.classList.add('articleCardPeliculaStyle');
+  }
+
+  myCardsGrid.appendChild(articleCard);
 }
 
 //+Hero Cards*/
@@ -384,15 +329,15 @@ export function generatorRelatedCards(cardsNumber) {
     console.log(indexArticle);
 
     if (articlesDB[indexArticle].tipo == "Historia Original") {
-      createCardRelatedHistoriaOriginal(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
+      articleCardGenerator(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
     }
 
     if (articlesDB[indexArticle].tipo == "Serie") {
-      createCardRelated(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
+      articleCardGenerator(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
     }
 
     if (articlesDB[indexArticle].tipo == "Pelicula") {
-      createCardRelated(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
+      articleCardGenerator(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
     }
     
   }
@@ -432,17 +377,17 @@ export function generatorIndexGridCards(cardsNumber){
   for (var i = 0; i < articlesDB.length; i++) {
   
      if (articlesDB[i].tipo == "Historia Original" && contadorH < cardsNumber) {
-      cardGrid(i, myGrid, articlesDB[i].tipo);
+      articleCardGenerator(i, myGrid, articlesDB[i].tipo);
       contadorH++;
     }
   
      else if (articlesDB[i].tipo == 'Pelicula' && contadorP < cardsNumber) {
-      cardGrid(i, myGrid, articlesDB[i].tipo);
+      articleCardGenerator(i, myGrid, articlesDB[i].tipo);
       contadorP++;
      }
   
      else if (articlesDB[i].tipo == 'Serie' && contadorS < cardsNumber) {
-       cardGrid(i, myGrid, articlesDB[i].tipo);
+       articleCardGenerator(i, myGrid, articlesDB[i].tipo);
        contadorS++;
      }
    }
@@ -455,7 +400,7 @@ export function generatorLibrariesGridCards(libraryType) {
   if (libraryType == "Historias Originales") {
     for (var indexArticle = 0; indexArticle < articlesDB.length; indexArticle++) {
       if (articlesDB[indexArticle].tipo == 'Historia Original') {
-        cardGrid(indexArticle, myGrid, articlesDB[indexArticle].tipo);
+        articleCardGenerator(indexArticle, myGrid, articlesDB[indexArticle].tipo);
       }
     }
   }
@@ -463,7 +408,7 @@ export function generatorLibrariesGridCards(libraryType) {
   if (libraryType == "Peliculas") {
     for (var indexArticle = 0; indexArticle < articlesDB.length; indexArticle++) {
       if (articlesDB[indexArticle].tipo == 'Pelicula') {
-        cardGrid(indexArticle, myGrid, articlesDB[indexArticle].tipo);
+        articleCardGenerator(indexArticle, myGrid, articlesDB[indexArticle].tipo);
       }
     }
   }
@@ -471,7 +416,7 @@ export function generatorLibrariesGridCards(libraryType) {
   if (libraryType == "Series") {
     for (var indexArticle = 0; indexArticle < articlesDB.length; indexArticle++) {
       if (articlesDB[indexArticle].tipo == 'Serie') {
-        cardGrid(indexArticle, myGrid, articlesDB[indexArticle].tipo);
+        articleCardGenerator(indexArticle, myGrid, articlesDB[indexArticle].tipo);
       }
     }
   }
@@ -480,15 +425,15 @@ export function generatorLibrariesGridCards(libraryType) {
     for (var indexArticle = 0; indexArticle < articlesDB.length; indexArticle++) {
   
       if (articlesDB[indexArticle].tipo == "Historia Original") {
-        cardGrid(indexArticle, myGrid, articlesDB[indexArticle].tipo);
+        articleCardGenerator(indexArticle, myGrid, articlesDB[indexArticle].tipo);
       }
   
       else if (articlesDB[indexArticle].tipo == 'Pelicula') {
-        cardGrid(indexArticle, myGrid, articlesDB[indexArticle].tipo);
+        articleCardGenerator(indexArticle, myGrid, articlesDB[indexArticle].tipo);
       }
   
       else if (articlesDB[indexArticle].tipo == 'Serie') {
-        cardGrid(indexArticle, myGrid, articlesDB[indexArticle].tipo);
+        articleCardGenerator(indexArticle, myGrid, articlesDB[indexArticle].tipo);
       }
     }
   }
