@@ -2,10 +2,9 @@
 
 import { articlesDB } from "./articlesdb.mjs";
 
-//+Create cards Functions*/
+//--> Functios to create Cards <--/
 
-//+Article Card*/
-//*Article Card*/
+//---> Article Card Generator Function <---/
 export function articleCardGenerator(indexArticle, myCardsGrid, cardType){
   const  articleCard = document.createElement("div");
   articleCard.className += ("articleCardContainer");
@@ -55,7 +54,7 @@ export function articleCardGenerator(indexArticle, myCardsGrid, cardType){
   myCardsGrid.appendChild(articleCard);
 }
 
-//+Hero Cards*/
+//---> Hero Card Generator Function <---/
 //*Historia Original Hero Card*/
 export function cardHeroHistoriaOriginal(indexArticle, mySlider){
   const heroCard = document.createElement("div");
@@ -203,146 +202,15 @@ export function cardHeroPelicula(indexArticle, mySlider){
 
   mySlider.appendChild(heroCard);
 }
-//TODO; Hacer que cada tipo de tarjeta tenga un color distinto
-//+Grid Cards*/
-export function cardGrid(indexArticle, myGrid, cardType){
-    const indexCard = document.createElement("div");
 
-    if(cardType == "Historia Original"){
-      indexCard.className += ("gridCardContainer");
-      indexCard.innerHTML = `
-      <div class="gridCardImage gridCardHOStyleImg">
-        <img src="${articlesDB[indexArticle].imagenBlog} " alt="">
-      </div>
-    
-      <div class="gridCardContent">
-        <div class="gridCardHeader">
-          <h2 class="gridCardTitle">${articlesDB[indexArticle].nombreBlog}</h2>
-          <p class="gridCardDate">${articlesDB[indexArticle].fecha}</p>
-        </div>
-        <div class="gridCardInfo">
-          <p>${articlesDB[indexArticle].tipo}</p>
-        </div>
-        <div class="gridCardLinks">
-          <a href=""><i class="fas fa-share-alt"></i></a>
-          <a href="${articlesDB[indexArticle].link}">Leer</a>
-        </div>
-      </div>
-    
-      <div class="gridCardBg gridCardHOStyle"></div>
-      `;
-    }
+//--> Functios to create Grids Cards <--/
 
-    if (cardType == "Serie") {
-      indexCard.className += ("gridCardContainer");
-      indexCard.innerHTML = `
-      <div class="gridCardImage gridCardSerieStyleImg">
-        <img src="${articlesDB[indexArticle].imagenBlog} " alt="">
-      </div>
-    
-      <div class="gridCardContent">
-        <div class="gridCardHeader">
-          <h2 class="gridCardTitle">${articlesDB[indexArticle].nombreBlog}</h2>
-          <p class="gridCardDate">${articlesDB[indexArticle].fecha}</p>
-        </div>
-        <div class="gridCardInfo">
-          <p>${articlesDB[indexArticle].tipo}</p>
-        </div>
-        <div class="gridCardLinks">
-          <a href=""><i class="fas fa-share-alt"></i></a>
-          <a href="${articlesDB[indexArticle].link}">Leer</a>
-        </div>
-      </div>
-    
-      <div class="gridCardBg gridCardSerieStyle"></div>
-      `;
-    }
-
-    if (cardType == "Pelicula") {
-      indexCard.className += ("gridCardContainer");
-      indexCard.innerHTML = `
-      <div class="gridCardImage gridCardPeliculaStyleImg">
-        <img src="${articlesDB[indexArticle].imagenBlog} " alt="">
-      </div>
-    
-      <div class="gridCardContent">
-        <div class="gridCardHeader">
-          <h2 class="gridCardTitle">${articlesDB[indexArticle].nombreBlog}</h2>
-          <p class="gridCardDate">${articlesDB[indexArticle].fecha}</p>
-        </div>
-        <div class="gridCardInfo">
-          <p>${articlesDB[indexArticle].tipo}</p>
-        </div>
-        <div class="gridCardLinks">
-          <a href=""><i class="fas fa-share-alt"></i></a>
-          <a href="${articlesDB[indexArticle].link}">Leer</a>
-        </div>
-      </div>
-    
-      <div class="gridCardBg gridCardPeliculaStyle"></div>
-      `;
-    }
-
-    if (cardType == "none") {
-      indexCard.className += ("gridCardContainer");
-      indexCard.innerHTML = `
-      <div class="gridCardImage">
-        <img src="${articlesDB[indexArticle].imagenBlog} " alt="">
-      </div>
-    
-      <div class="gridCardContent">
-        <div class="gridCardHeader">
-          <h2 class="gridCardTitle">${articlesDB[indexArticle].nombreBlog}</h2>
-          <p class="gridCardDate">${articlesDB[indexArticle].fecha}</p>
-        </div>
-        <div class="gridCardInfo">
-          <p>${articlesDB[indexArticle].tipo}</p>
-        </div>
-        <div class="gridCardLinks">
-          <a href=""><i class="fas fa-share-alt"></i></a>
-          <a href="${articlesDB[indexArticle].link}">Leer</a>
-        </div>
-      </div>
-    
-      <div class="gridCardBg"></div>
-      `;
-    }
-    myGrid.appendChild(indexCard);
-  }
-
-//+Random Index Generator*/
+//---> Random Index Generator <---/
 export function randomIndex(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
 
-//+Related Cards Generator*/
-//TODO: Hacer que genere cartas relacionadas con el articulo donde se creen las tarjetas*/
-//TODO: Bug al introducir el indice del ultimo articulo de la base de datos, Tambien impacta en el aside de recomendaciones y probablemente tmb en el hero card generator*/
-export function generatorRelatedCards(cardsNumber) {
-
-  const myCardsGrid = document.getElementById("relatedGrid");
-  console.log("Numero de Blogs ", articlesDB.length);
-
-  for (var i = 0; i < cardsNumber; i++) {
-
-    var indexArticle = randomIndex(0, articlesDB.length);
-    console.log(indexArticle);
-
-    if (articlesDB[indexArticle].tipo == "Historia Original") {
-      articleCardGenerator(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
-    }
-
-    if (articlesDB[indexArticle].tipo == "Serie") {
-      articleCardGenerator(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
-    }
-
-    if (articlesDB[indexArticle].tipo == "Pelicula") {
-      articleCardGenerator(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
-    }
-    
-  }
-}
-//+Hero Cards Generator*/
+//---> Hero Cards Generator <---/
 export function generatorHeroCards(cardsNumber) {
 
   const mySlider = document.getElementById("heroSlider");
@@ -364,8 +232,8 @@ export function generatorHeroCards(cardsNumber) {
   
   }
 }
-//+Grid Cards Generator*/
-//*Index Grid Cards Generator*/
+
+//---> Index Grid Cards Generator <---/
 export function generatorIndexGridCards(cardsNumber){
 
   const myGrid = document.getElementById("grid_articles");
@@ -392,7 +260,8 @@ export function generatorIndexGridCards(cardsNumber){
      }
    }
 }
-//*Libraries Grid Cards Generator*/
+
+//---> Libraries Grid Cards Generator <---/
 export function generatorLibrariesGridCards(libraryType) {
 
   const myGrid = document.getElementById("grid_articles");
@@ -436,5 +305,33 @@ export function generatorLibrariesGridCards(libraryType) {
         articleCardGenerator(indexArticle, myGrid, articlesDB[indexArticle].tipo);
       }
     }
+  }
+}
+
+//---> Related Cards Generator <---/
+//TODO: Hacer que genere cartas relacionadas con el articulo donde se creen las tarjetas*/
+//TODO: Bug al introducir el indice del ultimo articulo de la base de datos, Tambien impacta en el aside de recomendaciones y probablemente tmb en el hero card generator*/
+export function generatorRelatedCards(cardsNumber) {
+
+  const myCardsGrid = document.getElementById("relatedGrid");
+  console.log("Numero de Blogs ", articlesDB.length);
+
+  for (var i = 0; i < cardsNumber; i++) {
+
+    var indexArticle = randomIndex(0, articlesDB.length);
+    console.log(indexArticle);
+
+    if (articlesDB[indexArticle].tipo == "Historia Original") {
+      articleCardGenerator(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
+    }
+
+    if (articlesDB[indexArticle].tipo == "Serie") {
+      articleCardGenerator(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
+    }
+
+    if (articlesDB[indexArticle].tipo == "Pelicula") {
+      articleCardGenerator(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
+    }
+    
   }
 }
