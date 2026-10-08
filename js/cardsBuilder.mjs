@@ -210,6 +210,18 @@ export function randomIndex(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
 
+export function indexFinder(relatedArticlesList){
+  const relatedIndexList = [];
+  for (var i = 0; i < relatedArticlesList.length; i++){
+    for( var j = 0; j < articlesDB.length; j++){
+      if(relatedArticlesList[i] == articlesDB[j].nombreBlog){
+        relatedIndexList.push(j);
+      };
+    };
+  };
+  return relatedIndexList;
+};
+
 //---> Hero Cards Generator <---/
 export function generatorHeroCards(cardsNumber) {
 
@@ -313,17 +325,20 @@ export function generatorLibrariesGridCards(libraryType) {
 //TODO: Bug al introducir el indice del ultimo articulo de la base de datos, Tambien impacta en el aside de recomendaciones y probablemente tmb en el hero card generator*/
 export function generatorRelatedCards(cardsNumber, blogName) {
   
-  
   const articleName = blogName;
-
   const myCardsGrid = document.getElementById("relatedGrid");
-  
+  const blogFound = false;
+
   for (var i = 0; i < articlesDB.length; i++){
+    
+    console.log(articlesDB[i].nombreBlog);
     if(articlesDB[i].nombreBlog === articleName){
       
+      blogFound == true;
       const relatedArticlesList = articlesDB[i].relacionado;
-      
-      if(relatedArticlesList[0] == "none"){
+      const relatedIndexList = indexFinder(relatedArticlesList);
+
+      if(relatedIndexList.length == 0){
         for(var elementsNumber = 0; elementsNumber < cardsNumber; elementsNumber++){
           var indexArticle = randomIndex(0, articlesDB.length);
           articleCardGenerator(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
@@ -331,8 +346,8 @@ export function generatorRelatedCards(cardsNumber, blogName) {
         return;
       }
 
-      if(relatedArticlesList.length == 1){
-        articleCardGenerator(relatedArticlesList[0], myCardsGrid, articlesDB[relatedArticlesList[0]].tipo);
+      if(relatedIndexList.length == 1){
+        articleCardGenerator(relatedIndexList[0], myCardsGrid, articlesDB[relatedIndexList[0]].tipo);
         for(var elementsNumber = 1; elementsNumber < cardsNumber; elementsNumber++){
           var indexArticle = randomIndex(0, articlesDB.length);
           articleCardGenerator(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
@@ -340,22 +355,24 @@ export function generatorRelatedCards(cardsNumber, blogName) {
 
       }
 
-      if(relatedArticlesList.length > 1){
-        for(var elementsNumber = 0; elementsNumber < cardsNumber; elementsNumber++){
-          var indexArticle = randomIndex(0, relatedArticlesList.length);
+      if(relatedIndexList.length > 1){
+          var indexArticle = randomIndex(0, articlesDB.length);
           articleCardGenerator(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
+          for(var elementsNumber = 1; elementsNumber < cardsNumber; elementsNumber++){
+          var indexArticles = randomIndex(0, relatedIndexList.length);
+          articleCardGenerator(relatedIndexList[indexArticles], myCardsGrid, articlesDB[relatedIndexList[indexArticles]].tipo);
         }
       }
       return;
     }
 
-    else { 
-        for (var i = 0; i < cardsNumber; i++) {
-          var indexArticle = randomIndex(0, articlesDB.length);
-          articleCardGenerator(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
-        }
-      return;
-    }
+  }
 
+  if (!blogFound){ 
+    for (var i = 0; i < cardsNumber; i++) {
+      var indexArticle = randomIndex(0, articlesDB.length);
+      articleCardGenerator(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
+    }
+    return;
   }
 }
