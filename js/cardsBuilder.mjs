@@ -331,7 +331,6 @@ export function generatorRelatedCards(cardsNumber, blogName) {
 
   for (var i = 0; i < articlesDB.length; i++){
     
-    console.log(articlesDB[i].nombreBlog);
     if(articlesDB[i].nombreBlog === articleName){
       
       blogFound == true;
