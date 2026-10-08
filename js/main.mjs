@@ -79,7 +79,8 @@ if (title.innerHTML == "Biblioteca") {
 //**Bloques para Blogs*/
 else{
   //**Lineas que generan las tarjetas de la seccion de relacionados en todos los blogs*/
-  generatorRelatedCards(2);
+  const blogName = document.getElementById("title").innerHTML;
+  generatorRelatedCards(2, blogName);
   //**Lineas que generan el footer y la pet por defecto de cada blog */
   articleHeaderBuilder();
   articleImageBuilder();

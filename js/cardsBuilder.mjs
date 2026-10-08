@@ -311,27 +311,64 @@ export function generatorLibrariesGridCards(libraryType) {
 //---> Related Cards Generator <---/
 //TODO: Hacer que genere cartas relacionadas con el articulo donde se creen las tarjetas*/
 //TODO: Bug al introducir el indice del ultimo articulo de la base de datos, Tambien impacta en el aside de recomendaciones y probablemente tmb en el hero card generator*/
-export function generatorRelatedCards(cardsNumber) {
+export function generatorRelatedCards(cardsNumber, blogName) {
+  
+  console.log(blogName);
+  const articleName = blogName;
 
   const myCardsGrid = document.getElementById("relatedGrid");
-  console.log("Numero de Blogs ", articlesDB.length);
+  
+  for (var i = 0; i < articlesDB.length; i++){
 
-  for (var i = 0; i < cardsNumber; i++) {
+    if(articlesDB[i].nombreBlog == articleName){
+      const relatedArticlesList = articlesDB[i].relacionado;
+      
+      if(relatedArticlesList[0] == "none"){
+        for(var elementsNumber = 0; elementsNumber < cardsNumber; elementsNumber++){
+          var indexArticle = randomIndex(0, articlesDB.length);
+          articleCardGenerator(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
+        }
+        return;
+      }
 
-    var indexArticle = randomIndex(0, articlesDB.length);
-    console.log(indexArticle);
+      if(relatedArticlesList.length == 1){
+        articleCardGenerator(relatedArticlesList[0], myCardsGrid, articlesDB[relatedArticlesList[0]].tipo);
+        for(var elementsNumber = 1; elementsNumber < cardsNumber; elementsNumber++){
+          var indexArticle = randomIndex(0, articlesDB.length);
+          articleCardGenerator(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
+        }
 
-    if (articlesDB[indexArticle].tipo == "Historia Original") {
-      articleCardGenerator(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
+      }
+
+      if(relatedArticlesList.length > 1){
+        for(var elementsNumber = 0; elementsNumber < cardsNumber; elementsNumber++){
+          var indexArticle = randomIndex(0, relatedArticlesList.length);
+          articleCardGenerator(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
+        }
+      }
+
     }
+    else{
+      for (var elementsNumber = 0; elementsNumber < cardsNumber; elementsNumber++) {
 
-    if (articlesDB[indexArticle].tipo == "Serie") {
-      articleCardGenerator(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
-    }
+        var indexArticle = randomIndex(0, articlesDB.length);
 
-    if (articlesDB[indexArticle].tipo == "Pelicula") {
-      articleCardGenerator(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
+        if (articlesDB[indexArticle].tipo == "Historia Original") {
+          articleCardGenerator(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
+        }
+
+        if (articlesDB[indexArticle].tipo == "Serie") {
+          articleCardGenerator(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
+        }
+
+        if (articlesDB[indexArticle].tipo == "Pelicula") {
+          articleCardGenerator(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
+        }
+      }
     }
-    
   }
+
+
+
+
 }
