@@ -309,18 +309,18 @@ export function generatorLibrariesGridCards(libraryType) {
 }
 
 //---> Related Cards Generator <---/
-//TODO: Hacer que genere cartas relacionadas con el articulo donde se creen las tarjetas*/
+
 //TODO: Bug al introducir el indice del ultimo articulo de la base de datos, Tambien impacta en el aside de recomendaciones y probablemente tmb en el hero card generator*/
 export function generatorRelatedCards(cardsNumber, blogName) {
   
-  console.log(blogName);
+  
   const articleName = blogName;
 
   const myCardsGrid = document.getElementById("relatedGrid");
   
   for (var i = 0; i < articlesDB.length; i++){
-
-    if(articlesDB[i].nombreBlog == articleName){
+    if(articlesDB[i].nombreBlog === articleName){
+      
       const relatedArticlesList = articlesDB[i].relacionado;
       
       if(relatedArticlesList[0] == "none"){
@@ -346,29 +346,16 @@ export function generatorRelatedCards(cardsNumber, blogName) {
           articleCardGenerator(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
         }
       }
-
+      return;
     }
-    else{
-      for (var elementsNumber = 0; elementsNumber < cardsNumber; elementsNumber++) {
 
-        var indexArticle = randomIndex(0, articlesDB.length);
-
-        if (articlesDB[indexArticle].tipo == "Historia Original") {
+    else { 
+        for (var i = 0; i < cardsNumber; i++) {
+          var indexArticle = randomIndex(0, articlesDB.length);
           articleCardGenerator(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
         }
-
-        if (articlesDB[indexArticle].tipo == "Serie") {
-          articleCardGenerator(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
-        }
-
-        if (articlesDB[indexArticle].tipo == "Pelicula") {
-          articleCardGenerator(indexArticle, myCardsGrid, articlesDB[indexArticle].tipo);
-        }
-      }
+      return;
     }
+
   }
-
-
-
-
 }

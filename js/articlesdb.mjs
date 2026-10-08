@@ -13,7 +13,7 @@ export const articlesDB =
     capitulo:"none",
     tiempo:"none",
     link:"blogs_historias_originales/puertas.html",
-    relacionado: ['1', '2', '3']
+    relacionado: ['1']
   },
   {
     nombreBlog:"La chica de los audífonos",
@@ -25,7 +25,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/la_chica_de_los_audifonos.html",
+    link:"../blogs_historias_originales/la_chica_de_los_audifonos.html",
     relacionado:"none"
   },
   {
