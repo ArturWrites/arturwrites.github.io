@@ -12,7 +12,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/puertas.html",
+    link:"./blogs_historias_originales/puertas.html",
     relacionado: []
   },
   {
@@ -25,7 +25,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/la_chica_de_los_audifonos.html",
+    link:"./blogs_historias_originales/la_chica_de_los_audifonos.html",
     relacionado: []
   },
   {
@@ -38,7 +38,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/en_busca_de_tormentas.html",
+    link:"./blogs_historias_originales/en_busca_de_tormentas.html",
     relacionado: []
   },
   {
@@ -51,7 +51,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/una_pagina_en_blanco.html",
+    link:"./blogs_historias_originales/una_pagina_en_blanco.html",
     relacionado: []
   },
   {
@@ -64,7 +64,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/una_victoria_perdida.html",
+    link:"./blogs_historias_originales/una_victoria_perdida.html",
     relacionado: []
   },
   {
@@ -77,7 +77,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/un_futuro_perfecto.html",
+    link:"./blogs_historias_originales/un_futuro_perfecto.html",
     relacionado: []
   },
   {
@@ -90,7 +90,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/la_ultima_rosa.html",
+    link:"./blogs_historias_originales/la_ultima_rosa.html",
     relacionado: []
   },
   {
@@ -103,7 +103,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/gizli_capítulo_4.html",
+    link:"./blogs_historias_originales/gizli_capítulo_4.html",
     relacionado: ['Gizli Capítulo 3', 'Gizli Capítulo 2', 'Gizli Capítulo 1']
   },
   {
@@ -116,7 +116,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/gizli_capítulo_3.html",
+    link:"./blogs_historias_originales/gizli_capítulo_3.html",
     relacionado: ['Gizli Capítulo 1', 'Gizli Capítulo 2', 'Gizli Capítulo 4']
   },
   {
@@ -129,7 +129,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/gizli_capítulo_2.html",
+    link:"./blogs_historias_originales/gizli_capítulo_2.html",
     relacionado: ['Gizli Capítulo 1', 'Gizli Capítulo 3', 'Gizli Capítulo 4']
   },
   {
@@ -142,7 +142,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/gizli_capítulo_1.html",
+    link:"./blogs_historias_originales/gizli_capítulo_1.html",
     relacionado: ['Gizli Capítulo 2', 'Gizli Capítulo 3', 'Gizli Capítulo 4']
   },
   {
@@ -155,7 +155,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/cronicas_de_una_inmortal_3.html",
+    link:"./blogs_historias_originales/cronicas_de_una_inmortal_3.html",
     relacionado: ['Crónicas de una Inmortal Parte 1', 'Crónicas de una Inmortal Parte 2']
   },
   {
@@ -168,7 +168,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/cronicas_de_una_inmortal_2.html",
+    link:"./blogs_historias_originales/cronicas_de_una_inmortal_2.html",
     relacionado: ['Crónicas de una Inmortal Parte 1', 'Crónicas de una Inmortal Parte 3']
   },
   {
@@ -181,7 +181,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/cronicas_de_una_inmortal_1.html",
+    link:"./blogs_historias_originales/cronicas_de_una_inmortal_1.html",
     relacionado: ['Crónicas de una Inmortal Parte 2', 'Crónicas de una Inmortal Parte 3']
   },
   {
@@ -194,7 +194,7 @@ export const articlesDB =
     titulo:"Amor de Gata",
     capitulo:"none",
     tiempo:"Min. 5:10 - 7:21",
-    link:"blogs_peliculas/la_fantasia_de_nule.html",
+    link:"./blogs_peliculas/la_fantasia_de_nule.html",
     relacionado: []
   },
   {
@@ -207,7 +207,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/el_dilema_de_los_oficiales_summer_y_dunn.html",
+    link:"./blogs_historias_originales/el_dilema_de_los_oficiales_summer_y_dunn.html",
     relacionado: []
   },
   {
@@ -220,7 +220,7 @@ export const articlesDB =
     titulo:"Fate Grand Order",
     capitulo:"Capitulo: 11",
     tiempo:"Min. 7:10 - 9:21",
-    link:"blogs_series/el_reto_de_quetzalcoatl.html",
+    link:"./blogs_series/el_reto_de_quetzalcoatl.html",
     relacionado: ['El Mundo de Dioses y Humanos', 'La Gorgona Indestructible']
   },
   {
@@ -233,7 +233,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/los_golems_y_la_hechicera.html",
+    link:"./blogs_historias_originales/los_golems_y_la_hechicera.html",
     relacionado: []
   },
   {
@@ -246,7 +246,7 @@ export const articlesDB =
     titulo:"Fate Grand Order",
     capitulo:"Capitulo: 9",
     tiempo:"Min. 17:30 - 22:18",
-    link:"blogs_series/el_mundo_de_dioses_y_humanos.html",
+    link:"./blogs_series/el_mundo_de_dioses_y_humanos.html",
     relacionado: ['El Reto de Quetzalcóatl', 'La Gorgona Indestructible']
   },
   {
@@ -259,7 +259,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/beber_comer_cantar_bailar.html",
+    link:"./blogs_historias_originales/beber_comer_cantar_bailar.html",
     relacionado: []
   },
   {
@@ -272,7 +272,7 @@ export const articlesDB =
     titulo:"Fate Grand Order",
     capitulo:"Capitulo: 8",
     tiempo:"Min. 10:40 - 13:10",
-    link:"blogs_series/la_gorgona_indestructible.html",
+    link:"./blogs_series/la_gorgona_indestructible.html",
     relacionado:  ['El Reto de Quetzalcóatl', 'El Mundo de Dioses y Humanos']
   },
   {
@@ -285,7 +285,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/la_chica_que_conocio_irene.html",
+    link:"./blogs_historias_originales/la_chica_que_conocio_irene.html",
     relacionado: []
   },
   {
@@ -298,7 +298,7 @@ export const articlesDB =
     titulo:"Tenki no Ko",
     capitulo:"none",
     tiempo:"Min. 15:00 - 17:00",
-    link:"blogs_peliculas/la_leyenda_de_la_chica_sol.html",
+    link:"./blogs_peliculas/la_leyenda_de_la_chica_sol.html",
     relacionado: []
   },
   {
@@ -311,7 +311,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/una_nueva_oferta_para_melisa.html",
+    link:"./blogs_historias_originales/una_nueva_oferta_para_melisa.html",
     relacionado: []
   },
   {
@@ -324,7 +324,7 @@ export const articlesDB =
     titulo:"Sora Yori mo Tooi Basho",
     capitulo:"Capitulo: 8",
     tiempo:"Min. 16:00 - 20:10",
-    link:"blogs_series/elegimos_estar_aqui.html",
+    link:"./blogs_series/elegimos_estar_aqui.html",
     relacionado: ['¡Tenemos que ir!', '¡Saldré de Viaje sin un Plan!']
   },
   {
@@ -337,7 +337,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/dichos_de_viejos.html",
+    link:"./blogs_historias_originales/dichos_de_viejos.html",
     relacionado: []
   },
   {
@@ -350,7 +350,7 @@ export const articlesDB =
     titulo:"Sora Yori mo Tooi Basho",
     capitulo:"Capitulo: 4",
     tiempo:"Min. 19:10 - 22:00",
-    link:"blogs_series/tenemos_que_ir.html",
+    link:"./blogs_series/tenemos_que_ir.html",
     relacionado: ['¡Saldré de Viaje sin un Plan!', '¡Elegimos estar aquí!']
   },
   {
@@ -363,7 +363,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/me_has_dado_mi_venganza.html",
+    link:"./blogs_historias_originales/me_has_dado_mi_venganza.html",
     relacionado: []
   },
   {
@@ -376,7 +376,7 @@ export const articlesDB =
     titulo:"Sora Yori mo Tooi Basho",
     capitulo:"Capitulo: 1",
     tiempo:"Min. 4:17 - 7:30",
-    link:"blogs_series/saldre_de_viaje_sin_un_plan.html",
+    link:"./blogs_series/saldre_de_viaje_sin_un_plan.html",
     relacionado: ['¡Elegimos estar aquí!','¡Tenemos que ir!']
   },
   {
@@ -389,7 +389,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/la_ejecucion_de_un_rey.html",
+    link:"./blogs_historias_originales/la_ejecucion_de_un_rey.html",
     relacionado: []
   },
   {
@@ -402,7 +402,7 @@ export const articlesDB =
     titulo:"Maquia",
     capitulo:"none",
     tiempo:"Min. 13:00 - 16:05",
-    link:"blogs_peliculas/el_hibiol_de_maquia.html",
+    link:"./blogs_peliculas/el_hibiol_de_maquia.html",
     relacionado: []
   },
   {
@@ -415,7 +415,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/un_viaje_que_termina.html",
+    link:"./blogs_historias_originales/un_viaje_que_termina.html",
     relacionado: []
   },
   {
@@ -428,7 +428,7 @@ export const articlesDB =
     titulo:"Araburu Kisetsu No Otomedomo Yo",
     capitulo:"Capitulo: 8",
     tiempo:"Min. 18:03 - 19:10",
-    link:"blogs_series/la_declaracion_de_sonezaki_san.html",
+    link:"./blogs_series/la_declaracion_de_sonezaki_san.html",
     relacionado: ['La Declaración de Amagi', 'Coqueteo en la Pila del Agua']
   },
   {
@@ -441,7 +441,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/el_dia_lluvioso_de_andrea.html",
+    link:"./blogs_historias_originales/el_dia_lluvioso_de_andrea.html",
     relacionado: []
   },
   {
@@ -454,7 +454,7 @@ export const articlesDB =
     titulo:"Araburu Kisetsu No Otomedomo Yo",
     capitulo:"Capitulo: 4",
     tiempo:"Min. 2:44 - 4:10",
-    link:"blogs_series/la_declaracion_de_amagi.html",
+    link:"./blogs_series/la_declaracion_de_amagi.html",
     relacionado: ['Coqueteo en la Pila del Agua', 'La Declaración de Sonezaki San']
   },
   {
@@ -467,7 +467,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/el_dia_que_el_dragón_anciano_llego.html",
+    link:"./blogs_historias_originales/el_dia_que_el_dragón_anciano_llego.html",
     relacionado: []
   },
   {
@@ -480,7 +480,7 @@ export const articlesDB =
     titulo:"Araburu Kisetsu No Otomedomo Yo",
     capitulo:"Capitulo: 2",
     tiempo:"Min. 10:50 - 11:50",
-    link:"blogs_series/coqueteo_en_la_pila_del_agua.html",
+    link:"./blogs_series/coqueteo_en_la_pila_del_agua.html",
     relacionado: ['La Declaración de Sonezaki San', 'La Declaración de Amagi']
   },
   {
@@ -493,7 +493,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/la_chica_errante.html",
+    link:"./blogs_historias_originales/la_chica_errante.html",
     relacionado: []
   },
   {
@@ -506,7 +506,7 @@ export const articlesDB =
     titulo:"White Snake",
     capitulo:"none",
     tiempo:"Min. 33:41 - 38:10",
-    link:"blogs_peliculas/la_horquilla_de_jade.html",
+    link:"./blogs_peliculas/la_horquilla_de_jade.html",
     relacionado: []
   },
   {
@@ -519,7 +519,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/fabrica_de_monstruos.html",
+    link:"./blogs_historias_originales/fabrica_de_monstruos.html",
     relacionado: []
   },
   {
@@ -532,7 +532,7 @@ export const articlesDB =
     titulo:"Hi Score Girl",
     capitulo:"Capitulo: 12",
     tiempo:"Min. 18:30 - 20:35",
-    link:"blogs_series/te_presto_mi_playstation.html",
+    link:"./blogs_series/te_presto_mi_playstation.html",
     relacionado: ['Haruo vs Hidaka', 'Guile vs Zangief']
   },
   {
@@ -545,7 +545,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/la_puerta_en_el_estudio.html",
+    link:"./blogs_historias_originales/la_puerta_en_el_estudio.html",
     relacionado: []
   },
   {
@@ -558,7 +558,7 @@ export const articlesDB =
     titulo:"Hi Score Girl",
     capitulo:"Capitulo: 10",
     tiempo:"Min. 5:40 - 9:00",
-    link:"blogs_series/haruo_vs_hidaka.html",
+    link:"./blogs_series/haruo_vs_hidaka.html",
     relacionado: ['Guile vs Zangief', 'Te Presto mi PlayStation']
   },
   {
@@ -571,7 +571,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/asalto_en_la_bodega.html",
+    link:"./blogs_historias_originales/asalto_en_la_bodega.html",
     relacionado: []
   },
   {
@@ -584,7 +584,7 @@ export const articlesDB =
     titulo:"Hi Score Girl",
     capitulo:"Capitulo: 1",
     tiempo:"Min. 3:10 - 8:20",
-    link:"blogs_series/guile_vs_zangief.html",
+    link:"./blogs_series/guile_vs_zangief.html",
     relacionado: ['Te Presto mi PlayStation', 'Haruo vs Hidaka']
   },
   {
@@ -597,7 +597,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/los_ogros_rien_cuando_hablas_del_proximo_año.html",
+    link:"./blogs_historias_originales/los_ogros_rien_cuando_hablas_del_proximo_año.html",
     relacionado: []
   },
   {
@@ -610,7 +610,7 @@ export const articlesDB =
     titulo:"Dragon Quest Your Story",
     capitulo:"none",
     tiempo:"Min. 48:22 - 50:15",
-    link:"blogs_peliculas/el_corazon_de_luca.html",
+    link:"./blogs_peliculas/el_corazon_de_luca.html",
     relacionado: []
   },
   {
@@ -623,7 +623,7 @@ export const articlesDB =
     titulo:"Violet Evergarden",
     capitulo:"Capitulo: 9",
     tiempo:"Min. 1:00 - 3:05",
-    link:"blogs_series/el_ataque_a_media_noche.html",
+    link:"./blogs_series/el_ataque_a_media_noche.html",
     relacionado: ['Una Carta Difícil', '¿He escrito una buena carta?']
   },
   {
@@ -636,7 +636,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/expreso_al_infierno.html",
+    link:"./blogs_historias_originales/expreso_al_infierno.html",
     relacionado: []
   },
   {
@@ -649,7 +649,7 @@ export const articlesDB =
     titulo:"Violet Evergarden",
     capitulo:"Capitulo Especial",
     tiempo:"Min. 9:45 - 11:00",
-    link:"blogs_series/una_carta_dificil.html",
+    link:"./blogs_series/una_carta_dificil.html",
     relacionado: ['¿He escrito una buena carta?', 'El Ataque a Media Noche']
   },
   {
@@ -662,7 +662,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/el_hombre_de_la_banca_junto_al_río.html",
+    link:"./blogs_historias_originales/el_hombre_de_la_banca_junto_al_río.html",
     relacionado: []
   },
   {
@@ -675,7 +675,7 @@ export const articlesDB =
     titulo:"Violet Evergarden",
     capitulo:"Capitulo: 4",
     tiempo:"Min. 20:15 - 21:23",
-    link:"blogs_series/he_escrito_una_buena_carta.html",
+    link:"./blogs_series/he_escrito_una_buena_carta.html",
     relacionado: ['El Ataque a Media Noche', 'Una Carta Difícil']
   },
   {
@@ -688,7 +688,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/marauder_el_asesino_de_espadas.html",
+    link:"./blogs_historias_originales/marauder_el_asesino_de_espadas.html",
     relacionado: []
   },
   {
@@ -701,7 +701,7 @@ export const articlesDB =
     titulo:"BlackFox",
     capitulo:"none",
     tiempo:"Min. 69:47 - 72:50",
-    link:"blogs_peliculas/la_heredera_del_clan_isurugi.html",
+    link:"./blogs_peliculas/la_heredera_del_clan_isurugi.html",
     relacionado: []
   },
   {
@@ -714,7 +714,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/los_viajes_de_caronte.html",
+    link:"./blogs_historias_originales/los_viajes_de_caronte.html",
     relacionado: []
   },
   {
@@ -727,7 +727,7 @@ export const articlesDB =
     titulo:"Yakusoku no Neverland",
     capitulo:"Capitulo: 9",
     tiempo:"Min. 12:29 - 15:50",
-    link:"blogs_series/los_recuerdos_de_ray.html",
+    link:"./blogs_series/los_recuerdos_de_ray.html",
     relacionado: ['El Reloj de Krone', 'El Conejo de Conny']
   },
   {
@@ -740,7 +740,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/la_chica_del_centro_comercial.html",
+    link:"./blogs_historias_originales/la_chica_del_centro_comercial.html",
     relacionado: []
   },
   {
@@ -753,7 +753,7 @@ export const articlesDB =
     titulo:"Yakusoku no Neverland",
     capitulo:"Capitulo: 7",
     tiempo:"Min. 8:33 - 12:35",
-    link:"blogs_series/el_reloj_de_krone.html",
+    link:"./blogs_series/el_reloj_de_krone.html",
     relacionado: ['El Conejo de Conny', 'Los Recuerdos de Ray']
   },
   {
@@ -766,7 +766,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/crímenes_contra_el_ciclo_de_la_vida.html",
+    link:"./blogs_historias_originales/crímenes_contra_el_ciclo_de_la_vida.html",
     relacionado: []
   },
   {
@@ -779,7 +779,7 @@ export const articlesDB =
     titulo:"Yakusoku no Neverland",
     capitulo:"Capitulo: 1",
     tiempo:"Min. 15:25 - 18:41",
-    link:"blogs_series/el_conejo_de_conny.html",
+    link:"./blogs_series/el_conejo_de_conny.html",
     relacionado: ['Los Recuerdos de Ray', 'El Reloj de Krone']
   },
   {
@@ -792,7 +792,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/la_ira_de_apolo.html",
+    link:"./blogs_historias_originales/la_ira_de_apolo.html",
     relacionado: []
   },
   {
@@ -805,7 +805,7 @@ export const articlesDB =
     titulo:"Kaguya-sama wa Kokurasetai",
     capitulo:"Capitulo: 12",
     tiempo:"Min. 10:45 - 14:18",
-    link:"blogs_series/el_dia_que_kaguya_gano.html",
+    link:"./blogs_series/el_dia_que_kaguya_gano.html",
     relacionado: []
   },
   {
@@ -818,7 +818,7 @@ export const articlesDB =
     titulo:"Yuru Camp",
     capitulo:"Capitulo: 12",
     tiempo:"Min. 21:58 - 23:03",
-    link:"blogs_series/adivinemos_donde_estamos.html",
+    link:"./blogs_series/adivinemos_donde_estamos.html",
     relacionado: ['Dos Campistas Mensajeando', 'La Chica del Estacionamiento']
   },
   {
@@ -831,7 +831,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/las_cadenas_del_tartaro.html",
+    link:"./blogs_historias_originales/las_cadenas_del_tartaro.html",
     relacionado: []
   },
 
@@ -845,7 +845,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/un_dia_de_mucho_trabajo_en_la_morgue.html",
+    link:"./blogs_historias_originales/un_dia_de_mucho_trabajo_en_la_morgue.html",
     relacionado: []
   },
   {
@@ -858,7 +858,7 @@ export const articlesDB =
     titulo:"Yuru Camp",
     capitulo:"Capitulo: 5",
     tiempo:"Min. 17:30 - 21:00",
-    link:"blogs_series/dos_campistas_mensajeando.html",
+    link:"./blogs_series/dos_campistas_mensajeando.html",
     relacionado: ['La Chica del Estacionamiento', '¡Adivinemos Donde Estamos!']
   },
   {
@@ -871,7 +871,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/el_desafío_del_dragon_fafnir.html",
+    link:"./blogs_historias_originales/el_desafío_del_dragon_fafnir.html",
     relacionado: []
   },
   {
@@ -884,7 +884,7 @@ export const articlesDB =
     titulo:"Yuru Camp",
     capitulo:"Capitulo: 1",
     tiempo:"Min. 12:30 - 14:15",
-    link:"blogs_series/la_chica_del_estacionamiento.html",
+    link:"./blogs_series/la_chica_del_estacionamiento.html",
     relacionado: ['¡Adivinemos Donde Estamos!', 'Dos Campistas Mensajeando']
   },
   {
@@ -897,7 +897,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/el_hombre_en_el_espejo.html",
+    link:"./blogs_historias_originales/el_hombre_en_el_espejo.html",
     relacionado: []
   },
   {
@@ -910,7 +910,7 @@ export const articlesDB =
     titulo:"none",
     capitulo:"none",
     tiempo:"none",
-    link:"blogs_historias_originales/la_chica_que_baila_entre_los_arboles.html",
+    link:"./blogs_historias_originales/la_chica_que_baila_entre_los_arboles.html",
     relacionado: []
   },
   {
@@ -923,7 +923,7 @@ export const articlesDB =
     titulo:"Megalobox",
     capitulo:"Capitulo 8",
     tiempo:"Min. 18:48 - 22:15",
-    link:"blogs_series/yo_hago_las_reglas.html",
+    link:"./blogs_series/yo_hago_las_reglas.html",
     relacionado: ['Tu Eres Quien Controla Este Ring', 'Ábrete Paso Hasta Mi Ring']
   },
   {
@@ -936,7 +936,7 @@ export const articlesDB =
     titulo:"Megalobox",
     capitulo:"Capitulo: 4",
     tiempo:"Min. 13:29 - 16:20",
-    link:"blogs_series/tu_eres_quien_controla_este_ring.html",
+    link:"./blogs_series/tu_eres_quien_controla_este_ring.html",
     relacionado: ['Yo Hago las Reglas', 'Ábrete Paso Hasta Mi Ring']
   },
   {
@@ -949,7 +949,7 @@ export const articlesDB =
     titulo:"Megalobox",
     capitulo:"Capitulo: 2",
     tiempo:"Min. 5:48 - 8:55",
-    link:"blogs_series/abrete_paso_hasta_mi_ring.html",
+    link:"./blogs_series/abrete_paso_hasta_mi_ring.html",
     relacionado: ['Yo Hago las Reglas', 'Tu Eres Quien Controla Este Ring']
   },
   {
@@ -962,7 +962,7 @@ export const articlesDB =
     titulo:"Cop Craft",
     capitulo:"Capitulo: 11",
     tiempo:"Min. 10:45 - 12:42",
-    link:"blogs_series/los_terricolas_y_la_alienigena.html",
+    link:"./blogs_series/los_terricolas_y_la_alienigena.html",
     relacionado: ['La Fotógrafa y la Alienígena', 'El Detective y la Alienígena']
   },
   {
@@ -975,7 +975,7 @@ export const articlesDB =
     titulo:"Cop Craft",
     capitulo:"Capitulo: 7",
     tiempo:"Min. 6:10 - 9:34",
-    link:"blogs_series/la_fotografa_y_la_alienigena.html",
+    link:"./blogs_series/la_fotografa_y_la_alienigena.html",
     relacionado: ['Los Terrícolas y la Alienígena', 'El Detective y la Alienígena']
   },
   {
@@ -988,7 +988,7 @@ export const articlesDB =
     titulo:"Cop Craft",
     capitulo:"Capitulo: 2",
     tiempo:"Min. 00:00 - 4:28",
-    link:"blogs_series/el_detective_y_la_alienigena.html",
+    link:"./blogs_series/el_detective_y_la_alienigena.html",
     relacionado: ['Los Terrícolas y la Alienígena', 'La Fotógrafa y la Alienígena']
   },
   {
@@ -1001,7 +1001,7 @@ export const articlesDB =
     titulo:"Made In Abyss",
     capitulo:"Capitulo: 13",
     tiempo:"Min. 24:00 - 26:22",
-    link:"blogs_series/el_tesoro_de_nanachi.html",
+    link:"./blogs_series/el_tesoro_de_nanachi.html",
     relacionado: ['La Fortaleza de los Excavadores', 'La Ciudad Alrededor del Abismo']
   },
   {
@@ -1014,7 +1014,7 @@ export const articlesDB =
     titulo:"Made In Abyss",
     capitulo:"Capitulo: 5",
     tiempo:"Min. 13:09 - 15:14",
-    link:"blogs_series/la_fortaleza_de_los_excavadores.html",
+    link:"./blogs_series/la_fortaleza_de_los_excavadores.html",
     relacionado: ['La Ciudad Alrededor del Abismo', 'El Tesoro de Nanachi']
   },
   {
@@ -1027,7 +1027,7 @@ export const articlesDB =
     titulo:"Made In Abyss",
     capitulo:"Capitulo: 1",
     tiempo:"Min. 19:11 - 21:00",
-    link:"blogs_series/la_ciudad_alrededor_del_abismo.html",
+    link:"./blogs_series/la_ciudad_alrededor_del_abismo.html",
     relacionado: ['El Tesoro de Nanachi', 'La Fortaleza de los Excavadores']
   },
   {
@@ -1040,7 +1040,7 @@ export const articlesDB =
     titulo:"Gosik",
     capitulo:"Capitulo: 23",
     tiempo:"Min. 19:43 - 22:55",
-    link:"blogs_series/la_muneca_y_el_lobo_gris.html",
+    link:"./blogs_series/la_muneca_y_el_lobo_gris.html",
     relacionado: ['La Muñeca y el Caos', 'La Muñeca que Lee el Futuro']
   },
   {
@@ -1053,7 +1053,7 @@ export const articlesDB =
     titulo:"Gosik",
     capitulo:"Capitulo: 9",
     tiempo:"Min. 3:43 - 6:37",
-    link:"blogs_series/la_muneca_y_el_caos.html",
+    link:"./blogs_series/la_muneca_y_el_caos.html",
     relacionado: ['La Muñeca que Lee el Futuro', 'La Muñeca y el Lobo Gris']
   },
   {
@@ -1066,7 +1066,7 @@ export const articlesDB =
     titulo:"Gosik",
     capitulo:"Capitulo: 1",
     tiempo:"Min. 1:00 - 4:35",
-    link:"blogs_series/la_muneca_que_lee_el_futuro.html",
+    link:"./blogs_series/la_muneca_que_lee_el_futuro.html",
     relacionado: ['La Muñeca y el Lobo Gris', 'La Muñeca y el Caos']
   },
   {
@@ -1079,7 +1079,7 @@ export const articlesDB =
     titulo:"Fate Apocripha",
     capitulo:"Capitulo: 23",
     tiempo:"Min. 11.5 - 14.5",
-    link:"blogs_series/la_ultima_batalla_del_saber_rojo.html",
+    link:"./blogs_series/la_ultima_batalla_del_saber_rojo.html",
     relacionado: ['La Batalla Contra el Golem Invencible', 'Un Nuevo Contrato']
   },
   {
@@ -1092,7 +1092,7 @@ export const articlesDB =
     titulo:"Fate Apocripha",
     capitulo:"Capitulo: 14",
     tiempo:"Min. 15 - 21",
-    link:"blogs_series/la_batalla_contra_el_golem_invencible.html",
+    link:"./blogs_series/la_batalla_contra_el_golem_invencible.html",
     relacionado: ['Un Nuevo Contrato', 'La Ultima Batalla del Saber Rojo']
   },
   {
@@ -1105,7 +1105,7 @@ export const articlesDB =
     titulo:"Fate Apocripha",
     capitulo:"Capitulo: 13",
     tiempo:"Min. 11 - 13",
-    link:"blogs_series/un_nuevo_contrato.html",
+    link:"./blogs_series/un_nuevo_contrato.html",
     relacionado: ['La Ultima Batalla del Saber Rojo', 'La Batalla Contra el Golem Invencible']
   },
 ]
