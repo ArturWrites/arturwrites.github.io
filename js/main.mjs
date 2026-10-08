@@ -19,10 +19,13 @@ import { articleCardGenerator } from "./cardsBuilder.mjs";
 
 //** Rutinas constructora de paginas */
 navBarBuilder();
+
 const title = document.getElementById("title");
+var blog = true;
 
 //** Pagina de inicio */  
 if (title.innerHTML == "Fox Tales") {
+  blog = false;
   headerBuilder('Fox Tales');
   contentLibrariesBuilder();
   //**Lineas que generan la grid de la págnia de inicio */
@@ -34,6 +37,7 @@ if (title.innerHTML == "Fox Tales") {
 
 //** Bibioteca de Series */  
 if (title.innerHTML == "Series") {
+  blog = false;
   headerBuilder('Series');
   //**Lineas que generan la grid de la bliblioteca de series */
   contentLibrariesBuilder();
@@ -45,6 +49,7 @@ if (title.innerHTML == "Series") {
 
 //** Bibioteca de Peliculas */ 
 if (title.innerHTML == "Peliculas") {
+  blog = false;
   headerBuilder('Peliculas');
   //**Lineas que generan la grid de la bliblioteca de peliculas */
   contentLibrariesBuilder();
@@ -56,6 +61,7 @@ if (title.innerHTML == "Peliculas") {
 
 //** Bibioteca de Historias Originales */ 
 if (title.innerHTML == "Historias Originales") {
+  blog = false;
   headerBuilder('Historias Originales');
   //**Lineas que generan la grid de la bliblioteca de Historias Originales */
   contentLibrariesBuilder();
@@ -67,6 +73,7 @@ if (title.innerHTML == "Historias Originales") {
 
 //** Bibioteca General */ 
 if (title.innerHTML == "Biblioteca") {
+  blog = false;
   headerBuilder('Biblioteca General');
   //**Lineas que generan la grid de la bliblioteca general */
   contentLibrariesBuilder();
@@ -77,7 +84,8 @@ if (title.innerHTML == "Biblioteca") {
 }
 
 //**Bloques para Blogs*/
-else{
+
+if (blog){
   //**Lineas que generan las tarjetas de la seccion de relacionados en todos los blogs*/
   const blogName = document.getElementById("title").innerHTML;
   generatorRelatedCards(2, blogName);

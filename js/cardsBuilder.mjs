@@ -332,8 +332,7 @@ export function generatorRelatedCards(cardsNumber, blogName) {
   for (var i = 0; i < articlesDB.length; i++){
     
     if(articlesDB[i].nombreBlog === articleName){
-      
-      blogFound == true;
+
       const relatedArticlesList = articlesDB[i].relacionado;
       const relatedIndexList = indexFinder(relatedArticlesList);
 
